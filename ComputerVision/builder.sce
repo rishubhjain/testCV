@@ -11,7 +11,11 @@ function main_builder()
     TOOLBOX_NAME  = "ComputerVision";
     TOOLBOX_TITLE = "ComputerVision";
     toolbox_dir   = get_absolute_file_path("builder.sce");
-
+	//mprintf(toolbox_dir);
+	
+	//pyAddToPath(toolbox_dir+ "src/python/");
+	//path1=x+ "src/python/";
+	//mprintf(path1);
     // Check Scilab's version
     // =============================================================================
 
