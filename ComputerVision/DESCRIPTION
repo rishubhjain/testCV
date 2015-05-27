@@ -1,0 +1,41 @@
+Toolbox: OFIP
+
+Title: OFIP
+
+Summary: OpenCv functions implementation through scilab
+
+Version: 1.3
+
+Author: Scilab Enterprises
+
+Maintainer: Rishubh Jain
+
+Category: Image Processing
+
+Entity: Scilab Enterprises
+
+WebSite: http://www.scilab.org
+
+License: BSD
+
+ScilabVersion: >= 5.4
+
+Depends: 
+
+Date: 2015-14-03
+
+Description: Helps User to Use OpenCv functions in scilab
+ 
+-install scilab
+-copy paste the toolbox in contrib folder((OFIP))
+-install PIMS in SCILAB
+-run the builder file builder.sce
+-run the loader file loader.sce
+-call the cv_imread functions
+
+
+Requirements: 
+1) PIMS in scilab (atomsInstall("PIMS"))
+2) Python 2.7 in users distribution
+3) opencv installed and configured with python (sudo apt-get install python-opencv) 
+4) install Numpy(for future use)

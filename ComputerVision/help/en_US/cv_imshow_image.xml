@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * This file is released under the 3-clause BSD license. See COPYING-BSD.
+ *
+ -->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_imshow_image" xml:lang="en">
+    <refnamediv>
+        <refname>cv_imageshow_image</refname>
+        <refpurpose>Display Image </refpurpose>
+    </refnamediv>
+    <refsynopsisdiv>
+        <title>Calling Sequence</title>
+        <synopsis>cv_imageshow_image(image)</synopsis>
+    </refsynopsisdiv>
+    <refsection>
+        <title>Arguments</title>
+        <variablelist>
+            <varlistentry>
+                <term>image</term>
+                <listitem>
+                    <para>Image to be displayed</para>
+                </listitem>
+            </varlistentry>
+           
+        </variablelist>
+    </refsection>
+    <refsection>
+        <title>Description</title>
+        <para>Display  Image.</para>
+        <para>Given Image is displayed . This is used to view an Image once formatting is done</para>
+    </refsection>
+    <refsection>
+        <title>Examples</title>
+        <programlisting role="example">cv_imshow_image(image1)</programlisting>
+		
+    </refsection>
+    <refsection role="see also">
+        <title>See Also</title>
+        <simplelist type="inline">
+            <member>
+                <link linkend="cv_imshow_path">cv_imshow_path</link>
+            </member>
+        </simplelist>
+    </refsection>
+</refentry>

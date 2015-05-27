@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!--Begin Entities-->
+<!ENTITY a539b4b9ab88ceb65c62985d281b9c3c0 SYSTEM "file:///N:/ComputerVision/help/en_US/cv_imread.xml">
+<!ENTITY a735163c74ab0e5380c88a8b941a623c2 SYSTEM "file:///N:/ComputerVision/help/en_US/cv_imshow_image.xml">
+<!ENTITY a64dcacacac69deb2cd4f396d8686e8aa SYSTEM "file:///N:/ComputerVision/help/en_US/cv_imshow_path.xml">
+<!ENTITY a326e669f297d492158b8fa52d76389d0 SYSTEM "file:///N:/ComputerVision/help/en_US/cv_rgb2gray_path.xml">
+<!--End Entities-->
+]>
+<book version="5.0-subset Scilab" xml:lang="en_US"
+      xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info xml:id='computervision_manual'>
+    <title>ComputerVision</title>
+  </info>
+
+<part xml:id='section_0ce51c97f414970d13bf1fc755eeb455'>
+<title>ComputerVision</title>
+&a539b4b9ab88ceb65c62985d281b9c3c0;
+&a735163c74ab0e5380c88a8b941a623c2;
+&a64dcacacac69deb2cd4f396d8686e8aa;
+&a326e669f297d492158b8fa52d76389d0;
+</part>
+</book>
