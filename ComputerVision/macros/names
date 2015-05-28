@@ -3,3 +3,4 @@ cv_imshow_image
 cv_imshow_path
 cv_rgb2gray_image
 cv_rgb2gray_path
+cv_size
