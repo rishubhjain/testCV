@@ -4,7 +4,7 @@ pyAddToPath(pathname)
 function [image] = cv_rgb2gray_path(path) 
 	[lhs,rhs]=argn(0)
 	
-	
+  
 	if (lhs<>1) then
 		error("this function returns an image");
 	end

@@ -1,7 +1,7 @@
 pathname=get_absolute_file_path('cv_imread_path.sci');
 pyAddToPath(pathname);
 
-function[image1]=cv_imread_path(image_path) 
+function[image_ret]=cv_imread_path(image_path) 
     [lhs,rhs]=argn(0)
 	
 	
