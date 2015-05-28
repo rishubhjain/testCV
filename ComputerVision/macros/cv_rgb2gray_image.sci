@@ -3,6 +3,15 @@ pyAddToPath(pathname)
 
 function [image_ret] = cv_rgb2gray_image(image) 
 	[lhs,rhs]=argn(0)
+	pyAddToPath(pathname)
+	
+	pyImport cvcheck_channel
+	x=cvcheck_channel.check_channel(image);
+	if(x==0)
+		error("please input a grayscale Image")
+	end
+	
+	
 	
 	//if size(size(image),2) <> 1  then
 		//error('The input image should be in a RGB format.');
@@ -15,7 +24,7 @@ function [image_ret] = cv_rgb2gray_image(image)
 	if(rhs<>1) then
 		error("invalid number of arguments");
 	end
-	pyAddToPath(pathname)
+	
     
     pyImport rgb2gray_image
     image_ret=rgb2gray_image.rgb2gray(image)
