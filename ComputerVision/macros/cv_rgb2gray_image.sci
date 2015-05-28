@@ -7,15 +7,13 @@ function [image_ret] = cv_rgb2gray_image(image)
 	
 	pyImport cvcheck_channel
 	x=cvcheck_channel.check_channel(image);
-	if(x==0)
-		error("please input a grayscale Image")
+	if(x==2)
+		error("please input a rgb/bgr Image")
 	end
 	
 	
 	
-	//if size(size(image),2) <> 1  then
-		//error('The input image should be in a RGB format.');
-	//end
+	
   
 	if (lhs<>1) then
 		error("this function returns an image");
