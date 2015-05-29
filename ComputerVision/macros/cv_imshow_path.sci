@@ -1,7 +1,7 @@
 pathname=get_absolute_file_path('cv_imshow_path.sci')
 pyAddToPath(pathname)
 
-function[image]=cv_imshow_path(image_path)
+function[image_ret]=cv_imshow_path(image_path)
 	[lhs,rhs]=argn(0)
 	
 	
@@ -14,6 +14,9 @@ function[image]=cv_imshow_path(image_path)
 	
 	pyAddToPath(pathname)
 	pyImport imshow_path
-	
-    image=imshow_path.imshow(path)
+	image_ret=0
+    image_ret=imshow_path.imshow(path)
+	if(image_ret==0) then
+		error("wrong path")
+	end
 endfunction
