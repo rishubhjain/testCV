@@ -6,3 +6,4 @@ cv_rgb2gray_image
 cv_rgb2gray_path
 cv_size
 cv_write
+input_arguments
