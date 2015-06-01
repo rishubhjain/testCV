@@ -3,14 +3,15 @@
 import cv2
 import numpy as np
 
-def warpAffine_path(path):
+def warpAffine_path(path,x,y):
 
     read_origional = cv2.imread(path,0)
-   
+    x=int(x)
+    y=int(y)
 
     rows,cols = read_origional.shape
 
-    X = np.float32([[1,0,100],[0,1,50]])
+    X = np.float32([[1,0,x],[0,1,y]])
 
     trasformation = cv2.warpAffine(read_origional, X, (cols,rows))
 
@@ -19,14 +20,15 @@ def warpAffine_path(path):
 #image should be grayscale
 
 
-def warpAffine_image(img):
+def warpAffine_image(img,x,y):
 
     read_origional = img
-    cv2.imshow("Origional image",read_origional)
-
+        
+    x=int(x)
+    y=int(y)
     rows,cols = read_origional.shape
 
-    X = np.float32([[1,0,100],[0,1,50]])
+    X = np.float32([[1,0,x],[0,1,y]])
 
     trasformation = cv2.warpAffine(read_origional, X, (cols,rows))
 
