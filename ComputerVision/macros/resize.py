@@ -10,6 +10,7 @@ def resize1(image, height, width, interpolation_unit):
     width = int(width)
     r = height/image.shape[1]
     dim = (width, int(image.shape[0] * r))
+    interpolation_unit=int(interpolation_unit)
     if interpolation_unit==1:
         interpolation=cv2.INTER_AREA
     elif interpolation_unit==2:
