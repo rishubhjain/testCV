@@ -7,5 +7,6 @@ cv_rgb2gray_image
 cv_rgb2gray_path
 cv_size
 cv_warpAffine_image
+cv_wrapAffine_path
 cv_write
 input_arguments
