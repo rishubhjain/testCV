@@ -6,6 +6,7 @@
 <tocitem target="cv_imread_path" text="cv_imread_path"/>
 <tocitem target="cv_imshow_image" text="cv_imageshow_image"/>
 <tocitem target="cv_imshow_path" text="cv_imageshow_path"/>
+<tocitem target="cv_resize" text="cv_resize"/>
 <tocitem target="cv_rgb2gray_path" text="cv_rgb2gray_path"/>
 </tocitem>
 </tocitem>

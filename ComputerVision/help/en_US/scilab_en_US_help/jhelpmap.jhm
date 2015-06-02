@@ -6,5 +6,6 @@
 <mapID target="cv_imread_path" url="cv_imread_path.html"/>
 <mapID target="cv_imshow_image" url="cv_imshow_image.html"/>
 <mapID target="cv_imshow_path" url="cv_imshow_path.html"/>
+<mapID target="cv_resize" url="cv_resize.html"/>
 <mapID target="cv_rgb2gray_path" url="cv_rgb2gray_path.html"/>
 </map>

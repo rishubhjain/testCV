@@ -4,6 +4,7 @@
 <!ENTITY a0a179dd6532bd1f5014171534ea4e83a SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imread.xml">
 <!ENTITY a216bd356f7c84fd8111f7c78883cc4f7 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_image.xml">
 <!ENTITY a24eb4e8c56cf64578e02ffc51bf4abc9 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_path.xml">
+<!ENTITY aa59d67df24fdedca032eeed76984a57b SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_resize.xml">
 <!ENTITY a95a7c8e32f8d65a653bf8b74323e3a0c SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_rgb2gray_path.xml">
 <!--End Entities-->
 ]>
@@ -24,6 +25,7 @@
 &a0a179dd6532bd1f5014171534ea4e83a;
 &a216bd356f7c84fd8111f7c78883cc4f7;
 &a24eb4e8c56cf64578e02ffc51bf4abc9;
+&aa59d67df24fdedca032eeed76984a57b;
 &a95a7c8e32f8d65a653bf8b74323e3a0c;
 </part>
 </book>
