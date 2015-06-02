@@ -1,4 +1,4 @@
-pathname=get_absolute_file_path('cv_wrapAffine_image.sci')
+pathname=get_absolute_file_path('cv_warpAffine_image.sci')
 pyAddToPath(pathname)
 
 function [img_ret]=cv_warpAffine_image(image,x,y)
