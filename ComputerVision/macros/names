@@ -2,11 +2,12 @@ cv_check_channel
 cv_imread_path
 cv_imshow_image
 cv_imshow_path
-cv_prespective_transformation
+cv_prespective_transform
 cv_resize
 cv_rgb2gray_image
 cv_rgb2gray_path
 cv_rotate
+cv_sift
 cv_size
 cv_warpAffine_image
 cv_wrapAffine_path
