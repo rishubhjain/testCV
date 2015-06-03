@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * This file is released under the 3-clause BSD license. See COPYING-BSD.
+ *
+ -->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_rotate" xml:lang="en">
+    <refnamediv>
+        <refname>cv_rotate</refname>
+        <refpurpose>Rotate Image </refpurpose>
+    </refnamediv>
+    <refsynopsisdiv>
+        <title>Calling Sequence</title>
+        <synopsis>cv_rotate(image, angle)</synopsis>
+    </refsynopsisdiv>
+    <refsection>
+        <title>Arguments</title>
+        <variablelist>
+            <varlistentry>
+                <term>image</term>
+                <listitem>
+                    <para>Image to be Rotated</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <term>angle</term>
+                <listitem>
+                    <para>Angle with which the image is to be rotated</para>
+                </listitem>
+            </varlistentry>
+           
+        </variablelist>
+    </refsection>
+    <refsection>
+        <title>Description</title>
+        <para>Rotating an Image.</para>
+        <para>Takes an input image from user and rotates it to a specific angle provided by the User.
+		It gives an error if the Image is not correct i.e it is not n-darray
+		</para>
+    </refsection>
+    <refsection>
+        <title>Examples</title>
+        <programlisting role="example">cv_rotate(image1,90)</programlisting>
+		
+    </refsection>
+    <refsection role="see also">
+        <title>See Also</title>
+        <simplelist type="inline">
+            <member>
+                <link linkend="cv_imshow_path">cv_imshow_path</link>
+            </member>
+        </simplelist>
+    </refsection>
+</refentry>
