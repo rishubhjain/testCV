@@ -13,8 +13,11 @@ def SURF(image, hessianThreshHold):
     kp, des = surf.detectAndCompute(image,None)
 
     img2 = cv2.drawKeypoints(image,kp,None,(255,0,0),4)
+	cv2.imshow("image",img2)
+	cv2.waitKey(0)
+	
 
     if img2 is None:
-        return 0
+        return 0,0
     
-    return img2
+    return kp,des

@@ -1,7 +1,7 @@
 pathname=get_absolute_file_path('cv_surf.sci')
 pyAddToPath(pathname)
 
-function [image_ret] = cv_surf(image,hessianThreshold) 
+function [kp,des] = cv_surf(image,hessianThreshold) 
 	[lhs,rhs]=argn(0)
 	pyAddToPath(pathname)
 	
@@ -11,7 +11,7 @@ function [image_ret] = cv_surf(image,hessianThreshold)
 		error("Please input a grayscale Image")
 	end
 	
-	if (lhs<>1) then
+	if (lhs<>2) then
 		error("this function returns an image");
 	end
 	
@@ -21,10 +21,8 @@ function [image_ret] = cv_surf(image,hessianThreshold)
 	
     
     pyImport surf
-    image_ret=surf.SURF(image,hessianThreshold)
-	if(image_ret==0) then
-		error("error in Image")
-	end
+    [kp,des]surf.SURF(image,hessianThreshold)
+	
     
     
 endfunction 
