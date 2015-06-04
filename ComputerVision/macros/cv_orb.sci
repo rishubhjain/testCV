@@ -23,7 +23,7 @@ function [kp,des] = cv_orb(image,kp)
     
     pyImport orb
     [kp,des]=orb.ORB(image,kp)
-	if (kp==0) && (des==0) then
+	if (kp==0) then
 		error("Wrong Image")
 	end
 	

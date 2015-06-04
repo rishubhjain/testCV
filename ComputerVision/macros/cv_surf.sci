@@ -21,7 +21,10 @@ function [kp,des] = cv_surf(image,hessianThreshold)
 	
     
     pyImport surf
-    [kp,des]surf.SURF(image,hessianThreshold)
+    [kp,des]=surf.SURF(image,hessianThreshold);
+	if(kp==0) then
+		error("Please check input Image")
+	end
 	
     
     
