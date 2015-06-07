@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * This file is released under the 3-clause BSD license. See COPYING-BSD.
+ *
+ -->
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_prespective_transform" xml:lang="en">
+    <refnamediv>
+        <refname>cv_prespective_transform</refname>
+        <refpurpose>perspective transformation deals with the conversion of 3d world into 2d image</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv>
+        <title>cv_prespective_transform</title>
+        <synopsis>cv_prespective_transform(image,x1,x2,x3,x4,y1,y2,y3,y4) </synopsis>
+    </refsynopsisdiv>
+    <refsection>
+        <title>Arguments</title>
+        <variablelist>
+            <varlistentry>
+                <term>image</term>
+                <listitem>
+                    <para>Image to be converted</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <term>x1</term>
+                <listitem>
+                    <para>x-coordinate of 1rst point</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <term>x2</term>
+                <listitem>
+                    <para>x-coordinate of 2nd point</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <term>x3</term>
+                <listitem>
+                    <para>x-coordinate of 3rd point</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <term>x4</term>
+                <listitem>
+                    <para>x-coordinate of 4th point</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <termy>y1</term>
+                <listitem>
+                    <para>y-coordinate of 1rst point</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <term>y2</term>
+                <listitem>
+                    <para>y-coordinate of 2nd point</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <term>y3</term>
+                <listitem>
+                    <para>y-coordinate of 3rd point</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <term>y4</term>
+                <listitem>
+                    <para>ycoordinate of 4th point</para>
+                </listitem>
+            </varlistentry>
+			
+           
+        </variablelist>
+    </refsection>
+    <refsection>
+        <title>Description</title>
+        <para>Performing Prespective transform.</para>
+        <para> To find this transformation matrix, you need 4 points on the input image and corresponding points on the output image. Among these 4 points, 3 of them should not be collinear. Then transformation matrix can be found by the function.It returns the image after transformation
+		It gives an error if the Image is not correct i.e it is not n-darray
+		</para>
+    </refsection>
+    <refsection>
+        <title>Examples</title>
+        <programlisting role="example"></programlisting>
+		
+    </refsection>
+    <refsection role="see also">
+        <title>See Also</title>
+        <simplelist type="inline">
+            <member>
+                <link linkend="cv_imshow_path">cv_imshow_path</link>
+            </member>
+        </simplelist>
+    </refsection>
+</refentry>
