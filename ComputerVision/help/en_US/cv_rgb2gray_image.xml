@@ -3,29 +3,29 @@
  * This file is released under the 3-clause BSD license. See COPYING-BSD.
  *
  -->
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_rgb2gray_path" xml:lang="en">
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_rgb2gray_image" xml:lang="en">
     <refnamediv>
-        <refname>cv_rgb2gray_path</refname>
+        <refname>cv_rgb2gray_image</refname>
         <refpurpose>Convert colour image into grayscale</refpurpose>
     </refnamediv>
     <refsynopsisdiv>
         <title>Calling Sequence</title>
-        <synopsis>image= cv_rgb2gray_path(path)</synopsis>
+        <synopsis>image_ret= cv_rgb2gray_image(image)</synopsis>
     </refsynopsisdiv>
     <refsection>
         <title>Arguments</title>
         <variablelist>
             <varlistentry>
-                <term>path</term>
+                <term>image</term>
                 <listitem>
-                    <para>Path of the Image</para>
+                    <para>Image that is to be converted into grayscale</para>
                 </listitem>
             </varlistentry>
             
             <varlistentry>
-                <term>image</term>
+                <term>image_ret</term>
                 <listitem>
-                    <para>Image is read from the path and returned to output variable "image"</para>
+                    <para>Image is read from the path and returned to output variable "image_ret"</para>
                 </listitem>
             </varlistentry>
         </variablelist>
@@ -33,12 +33,12 @@
     <refsection>
         <title>Description</title>
         <para>Convert the RGB image into grayscale</para>
-        <para>Image is read from the path provided by user, then the image is converted into grayscale and grayscale image is returned to the user via output variable </para>
+        <para>Image is  provided by user, then the image is converted into grayscale and grayscale image is returned to the user via output variable </para>
         </refsection>
     <refsection>
         <title>Examples</title>
-        <programlisting role="example">image=cv_rgb2gray_path("N:\image.png")</programlisting>
-		<programlisting role="example">image=cv_rgb2gray_path("~/image.png")</programlisting>
+        <programlisting role="example">image=cv_rgb2gray_image(Img)</programlisting>
+		
     </refsection>
     <refsection role="see also">
         <title>See Also</title>
