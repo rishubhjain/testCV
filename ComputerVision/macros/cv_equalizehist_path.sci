@@ -1,7 +1,7 @@
-pathname=get_absolute_file_path('cv_equalizehist_image.sci')
+pathname=get_absolute_file_path('cv_equalizehist_path.sci')
 pyAddToPath(pathname)
 
-function [image_ret] = cv_equalizehist_image(image) 
+function [image_ret] = cv_equalizehist_path(path) 
 	[lhs,rhs]=argn(0)
 	pyAddToPath(pathname)
 	
@@ -16,7 +16,7 @@ function [image_ret] = cv_equalizehist_image(image)
 	
     
     pyImport equalizeHist_file
-    image_ret=equalizeHist_file.equalizeHist_image(image)
+    image_ret=equalizeHist_file.equalizeHist_path(path)
 	if(image_ret==0) then
 		error("error in Image")
 	end
