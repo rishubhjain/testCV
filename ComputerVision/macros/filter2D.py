@@ -4,14 +4,10 @@ import cv2
 import numpy as np
 
 #color image
-def filter2D(image,ddepth):
+def filter(image,depth):
 
-    read_original = image
-    
     kernal = np.ones((5,5),np.float32)/25
-    ddepth=int(ddepth)
-    dst = cv2.filter2D(read_original, ddepth, kernal)
+    depth=int(depth)
+    dst = cv2.filter2D(image, depth, kernal)
     
-    transformed = np.hstack((read_original,dst))
-    
-    return transformed
+    return dst
