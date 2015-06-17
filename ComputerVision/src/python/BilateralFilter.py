@@ -11,7 +11,7 @@ import numpy as np
 def bilateralFilter(img, d, sigmaColor, sigmaSpace):
 
     if img is None:
-        print 'please check the image'
+        print 'Error in input Image'
         return 0
 
     d = int(d)

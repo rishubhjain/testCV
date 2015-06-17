@@ -7,6 +7,7 @@ import cv2
 def medianblur(img, kSize):
 
     if img is None:
+        print 'Error in input Image'
         return 0
     #img = cv2.imread(image)
     cv2.Laplacian(img,cv2.CV_8U)

@@ -10,6 +10,7 @@ import numpy as np
 def gaussianFilter(img, ksize, sigmaX, sigmaY):
 
     if img is None:
+        print 'Error in input Image'
         return 0
 
     kSize1 = int(ksize[0])

@@ -6,7 +6,9 @@ def rgb2gray(image):
    
     
     
-    
+    if image is None:
+        print 'Error in input Image'
+        return 1
     
     RGB2GRAY = cv2.cvtColor(image,cv2.COLOR_RGB2GRAY)
     #cv2.imshow ('Converted to rgb2gray',RGB2GRAY)

@@ -7,8 +7,9 @@ import numpy as np
 def otsu(image):
  
     img = image
-	if img is None
-		return 0
+    if img is None:
+        print 'Error in input Image'
+	return 0
     
     
     ret, thresh = cv2.threshold(img,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)

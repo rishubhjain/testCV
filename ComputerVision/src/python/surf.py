@@ -18,6 +18,7 @@ def SURF(image, hessianThreshHold):
 	
 
     if img2 is None:
+        print 'Error in input Image'
         return 0,0
     
     return kp,des

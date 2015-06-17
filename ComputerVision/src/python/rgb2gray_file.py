@@ -7,7 +7,8 @@ def rgb2gray(path):
     
     imgread = cv2.imread (path)
     if image is None:
-	    return 0
+        print 'Error in input Image'
+        return 0
     
     cv2.imshow ('Origional Image',imgread)
     

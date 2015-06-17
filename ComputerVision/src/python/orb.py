@@ -4,6 +4,7 @@ import numpy as np
 
 def ORB(image,kp):
     if image is None:
+        print 'Error in input Image'
         return 0,0
     orb = cv2.ORB()
     kp = orb.detect(img,None)

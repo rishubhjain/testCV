@@ -19,13 +19,7 @@ def resize1(image, height, width, interpolation_unit):
         interpolation=cv2.INTER_LINEAR
     resized = cv2.resize(image, dim, interpolation)
     if resized is None:
+            print 'Error in input Image'
 	    return 0
     
-   
-
-    #res = np.hstack((img, resized))
-    #cv2.imshow('origional',img)
-    #cv2.imshow('resize', resized)
-
-    #cv2.waitKey(0)
     return resized
