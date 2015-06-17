@@ -6,7 +6,9 @@ import numpy as np
 def Blur(img,kSize):
     
     if img is None:
+        print 'Error in input Image'
         return 0
+    
 
     kSize1 = int(kSize[0])
     kSize2 = int(kSize[1])
