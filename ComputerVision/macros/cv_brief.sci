@@ -1,9 +1,6 @@
-pathname=get_absolute_file_path('cv_brief.sci')
-pyAddToPath(pathname)
-
+//kp->keypoints
 function [kp,des] = cv_brief(image,kp) 
 	[lhs,rhs]=argn(0)
-	pyAddToPath(pathname)
 	
 	pyImport cvcheck_channel
 	channel=cvcheck_channel.check_channel(image);
@@ -18,13 +15,10 @@ function [kp,des] = cv_brief(image,kp)
 	if(rhs<>2) then
 		error("invalid number of arguments");
 	end
-	
-    
+
     pyImport BRIEF
     image_ret=BRIEF.brief(image,kp)
-	if(image_ret==0) then
-		error("error in Image")
-	end
+	
     
     
 endfunction 

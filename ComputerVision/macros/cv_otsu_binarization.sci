@@ -1,6 +1,3 @@
-pathname=get_absolute_file_path('cv_otsu_binarization.sci')
-pyAddToPath(pathname)
-
 function[img_ret]=cv_otsu_binarization(image) 
 	[lhs,rhs]=argn(0)
 	pyAddToPath(pathname)
@@ -17,9 +14,7 @@ function[img_ret]=cv_otsu_binarization(image)
     
     pyImport Otus_binarization
     img_ret=Otsu_binarization.otsu(image)
-	if(image_ret==0) then
-		error("error in Image")
-	end
+
     
     
 endfunction 

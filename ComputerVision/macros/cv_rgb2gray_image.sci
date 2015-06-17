@@ -1,9 +1,7 @@
-pathname=get_absolute_file_path('cv_rgb2gray_image.sci')
-pyAddToPath(pathname)
 
 function [image_ret] = cv_rgb2gray_image(image) 
 	[lhs,rhs]=argn(0)
-	pyAddToPath(pathname)
+
 	
 	pyImport cvcheck_channel
 	x=cvcheck_channel.check_channel(image);

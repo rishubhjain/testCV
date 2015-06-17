@@ -1,6 +1,3 @@
-pathname=get_absolute_file_path('cv_size.sci')
-pyAddToPath(pathname)
-
 function [size] = cv_size(image) 
 	[lhs,rhs]=argn(0)
 	

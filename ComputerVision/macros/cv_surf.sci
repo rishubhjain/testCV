@@ -1,9 +1,7 @@
-pathname=get_absolute_file_path('cv_surf.sci')
-pyAddToPath(pathname)
 
 function [kp,des] = cv_surf(image,hessianThreshold) 
 	[lhs,rhs]=argn(0)
-	pyAddToPath(pathname)
+
 	
 	pyImport cvcheck_channel
 	channel=cvcheck_channel.check_channel(image);

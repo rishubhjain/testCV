@@ -1,10 +1,6 @@
-pathname=get_absolute_file_path('cv_blur.sci')
-pyAddToPath(pathname)
-
+//ksize->kernel size
 function[img_ret]=cv_blur(image,ksize) 
 	[lhs,rhs]=argn(0)
-	pyAddToPath(pathname)
-	
 	
 	if (lhs<>1) then
 		error("this function returns an image");
@@ -14,13 +10,9 @@ function[img_ret]=cv_blur(image,ksize)
 		error("invalid number of input arguments");
 	end
 	
-    
+    img_ret=0
     pyImport Blur
-    img_ret=Blur.blur(image)
-	if(image_ret==0) then
-		error("error in Image")
-	end
-    
+    img_ret=Blur.blur(image)    
     
 endfunction 
 

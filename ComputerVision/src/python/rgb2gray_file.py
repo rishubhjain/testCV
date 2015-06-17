@@ -6,6 +6,9 @@ def rgb2gray(path):
    
     
     imgread = cv2.imread (path)
+    if image is None:
+	    return 0
+    
     cv2.imshow ('Origional Image',imgread)
     
     RGB2GRAY = cv2.cvtColor(imgread,cv2.COLOR_RGB2GRAY)

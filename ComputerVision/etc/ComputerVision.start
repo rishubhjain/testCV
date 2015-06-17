@@ -22,7 +22,11 @@ function toolboxlib = startModule()
   mprintf("\tLoad macros\n");
   
   pathmacros = pathconvert( root_tlbx ) + "macros" + filesep();
-  mprintf(pathmacros);
+  
+  pathsrc = pathconvert( root_tlbx ) + "src" ;
+  pathsrc1=pathconvert(pathsrc) + "\python";
+  pyAddToPath(pathsrc1)
+  
   toolboxlib = lib(pathmacros);
   
  

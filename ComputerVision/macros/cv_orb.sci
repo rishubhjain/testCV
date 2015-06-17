@@ -1,10 +1,9 @@
-pathname=get_absolute_file_path('cv_orb.sci')
-pyAddToPath(pathname)
+
 //check whether this function allows kp in float
 
 function [kp,des] = cv_orb(image,kp) 
 	[lhs,rhs]=argn(0)
-	pyAddToPath(pathname)
+
 	
 	pyImport cvcheck_channel
 	channel=cvcheck_channel.check_channel(image);
