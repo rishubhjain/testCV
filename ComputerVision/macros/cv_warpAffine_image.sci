@@ -1,5 +1,7 @@
 function [img_ret]=cv_warpAffine_image(image,x,y)
-    if (lhs<>1) then
+    [lhs,rhs]=argn(0)
+	
+	if (lhs<>1) then
 		error("this function returns an image");
 	end
 	
