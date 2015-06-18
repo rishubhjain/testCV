@@ -10,7 +10,7 @@
     </refnamediv>
     <refsynopsisdiv>
         <title>Calling Sequence</title>
-        <synopsis>img_ret= bilateralFilter(image, d, sigmaColor, sigmaSpace)</synopsis>
+        <synopsis>img_ret= cv_bilateralFilter(image, d, sigmaColor, sigmaSpace)</synopsis>
     </refsynopsisdiv>
     <refsection>
         <title>Arguments</title>

@@ -50,13 +50,13 @@ def coding():
     no_of_input_args=input('Enter number of input argument:')
     for i in xrange(1,no_of_input_args+1):
         if i==1:
-            globals()['iarg%s'%i]=input('Enter ' +str(i)+'rst output argument:')
+            globals()['iarg%s'%i]=input('Enter ' +str(i)+'rst input argument:')
         elif i==2:
-            globals()['iarg%s'%i]=input('Enter ' +str(i)+'nd output argument:')
+            globals()['iarg%s'%i]=input('Enter ' +str(i)+'nd input argument:')
         elif i==3:
-            globals()['iarg%s'%i]=input('Enter ' +str(i)+'rd output argument:')
+            globals()['iarg%s'%i]=input('Enter ' +str(i)+'rd input argument:')
         else:
-            globals()['iarg%s'%i]=input('Enter ' +str(i)+'th output argument:')
+            globals()['iarg%s'%i]=input('Enter ' +str(i)+'th input argument:')
 
 
 
