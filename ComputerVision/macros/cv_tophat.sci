@@ -11,4 +11,4 @@ function[img_ret]=cv_tophat(image,kernal_type,kernal_size)
 	img_ret=0;
 	pyImport Tophat
     img_ret=Tophat.tophat(image,kernal_type,kernal_size)
-endfunctionn
+endfunction

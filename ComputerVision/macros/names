@@ -1,4 +1,5 @@
 cv_bilateralfilter
+cv_blackhat
 cv_blur
 cv_brief
 cv_calchist
@@ -9,13 +10,13 @@ cv_equalizehist_image
 cv_equalizehist_path
 cv_filter2D
 cv_gaussianfilter
+cv_gradient
 cv_imread_path
 cv_imshow_image
 cv_imshow_path
 cv_medianblur
 cv_orb
 cv_otsu_binarization
-cv_otus_binarization
 cv_prespective_transform
 cv_resize
 cv_rgb2gray_image
@@ -24,7 +25,8 @@ cv_rotate
 cv_sift
 cv_size
 cv_surf
+cv_test
+cv_tophat
 cv_warpAffine_image
 cv_wrapAffine_path
-cv_write
 input_arguments

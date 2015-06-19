@@ -2,19 +2,16 @@
 
 import cv2
 import numpy as np
-
-def Blur(img,kSize):
+import Kernel
+def Blur(img,kernel_type,kernel_size):
     
     if img is None:
         print 'Error in input Image'
         return 0
     
 
-    kSize1 = int(kSize[0])
-    kSize2 = int(kSize[1])
+    kernel=Kernel.kernel(kernel_type,kernel_size)
 
-    kSize = (kSize1, kSize2)
+    blurimage = cv2.blur(img,kernel)
 
-    b = cv2.blur(img, kSize)
-
-    return b
+    return blurimage

@@ -1,4 +1,4 @@
-function[img_ret]=cv_blackhat(image,kernal_type,kernal_size)
+function[img_ret]=cv_blackhat(image,kernel_type,kernel_size)
    [lhs,rhs]=argn(0)
 	
 	if (lhs<>1) then
@@ -10,5 +10,5 @@ function[img_ret]=cv_blackhat(image,kernal_type,kernal_size)
 	end
 	img_ret=0;
 	pyImport Blackhat
-    img_ret=Blackhat.blackhat(image,kernal_type,kernal_size)
-endfunctionn
+    img_ret=Blackhat.blackhat(image,kernel_type,kernel_size)
+endfunction

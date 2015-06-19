@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_blur" xml:lang="en">
+<refnamediv>
+<refname>cv_blur</refname>
+ <refpurpose>Blurs the Input Image</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_blur(image,kernel_type,kernel_size)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_type</term>
+<listitem>
+<para>It accepts the Integer/Float as Input  1->MORPH_RECT 2-> MORPH_ELLIPSE 3-> MORPH_CROSS</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_size</term>
+<listitem>
+<para>It requires a list specifying the size of Kernel needed example (5,5)</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Returned Image after blackhat operation</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Provides the function of Blurring/Averaging</para>
+<para> this function simply takes the average of all the pixels under kernel area and replaces the central element with this average. This is done by the function cv2.blur().For more information on kernel type see structuring element section of http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html  </para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img_ret=cv_blur(input_image,1,[5,5])</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_blackhat">cv_blackhat</link>
+<link linkend="cv_bilateralfilter">cv_bilateralfilter</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

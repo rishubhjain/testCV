@@ -1,52 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
- * This file is released under the 3-clause BSD license. See COPYING-BSD.
- *
- -->
 <refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_bilateralfilter" xml:lang="en">
-    <refnamediv>
-        <refname>cv_bilateralfilter</refname>
-        <refpurpose>Bilateral Filtering</refpurpose>
-    </refnamediv>
-    <refsynopsisdiv>
-        <title>Calling Sequence</title>
-        <synopsis>img_ret= cv_bilateralFilter(image, d, sigmaColor, sigmaSpace)</synopsis>
-    </refsynopsisdiv>
-    <refsection>
-        <title>Arguments</title>
-        <variablelist>
-            <varlistentry>
-                <term>image</term>
-                <listitem>
-                    <para>Image for which histogram is needed</para>
-                </listitem>
-            </varlistentry>
-            
-            <varlistentry>
-                <term>image_ret</term>
-                <listitem>
-                    <para>Image is read from the path and returned to output variable "image_ret"</para>
-                </listitem>
-            </varlistentry>
-        </variablelist>
-    </refsection>
-    <refsection>
-        <title>Description</title>
-        <para>Convert the RGB image into grayscale</para>
-        <para>Image is  provided by user, then the image is converted into grayscale and grayscale image is returned to the user via output variable </para>
-        </refsection>
-    <refsection>
-        <title>Examples</title>
-        <programlisting role="example">image=cv_rgb2gray_image(Img)</programlisting>
-		
-    </refsection>
-    <refsection role="see also">
-        <title>See Also</title>
-        <simplelist type="inline">
-            <member>
-                <link linkend="cv_imshow_path">cv_imshow_path</link>
-				<link linkend="cv_imread">cv_imread</link>
-            </member>
-        </simplelist>
-    </refsection>
+<refnamediv>
+<refname>cv_bilateralfilter</refname>
+ <refpurpose>Bilateral Filtering the Input Image</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_bilateralfilter(image,d,sigmaColor,sigmaSpace)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>d</term>
+<listitem>
+<para>Diameter of each pixel neighborhood that is used during filtering</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>sigmaColor</term>
+<listitem>
+<para>Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood will be mixed together, resulting in larger areas of semi-equal color.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>sigmaSpace</term>
+<listitem>
+<para>Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough. When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Returned Image after filtering</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Provides Bilateral Filtering to Input image</para>
+<para> This filter can reduce noise of the image while preserving the edges. The drawback of this type of filter is that it takes longer to filter the input image.</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img_ret=cv_bilateralfilter(input_image,2,75,75)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_imshow()">cv_imshow()</link>
+<link linkend="cv_imread()">cv_imread()</link>
+</member>
+</simplelist>
+</refsection>
 </refentry>

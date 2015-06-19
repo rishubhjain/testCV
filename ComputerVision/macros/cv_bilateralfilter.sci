@@ -1,4 +1,4 @@
-function[img_ret]=bilateralFilter(img, d, sigmaColor, sigmaSpace) 
+function[img_ret]=bilateralfilter(img, d, sigmaColor, sigmaSpace) 
 	[lhs,rhs]=argn(0)
 	
 	if (lhs<>1) then

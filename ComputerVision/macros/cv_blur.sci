@@ -1,18 +1,18 @@
-//ksize->kernel size
-function[img_ret]=cv_blur(image,ksize) 
+
+function[img_ret]=cv_blur(image,kernel_type,kernel_size) 
 	[lhs,rhs]=argn(0)
 	
 	if (lhs<>1) then
 	error("this function returns an image");
 	end
 	
-	if(rhs<>2) then
+	if(rhs<>3) then
 	error("invalid number of input arguments");
 	end
 	
     img_ret=0
     pyImport Blur
-    img_ret=Blur.blur(image)    
+    img_ret=Blur.blur(image,kernel_type,kernel_size)    
     
 endfunction 
 

@@ -72,7 +72,7 @@ def coding():
     file.write('[lhs,rhs]=argn(0)\n')
     
     file.write('if (lhs<>'+str(no_of_output_args)+') then \n')
-    file.write('error("this function returns '+str(no_of_output_args)+' arguments );\n')
+    file.write('error("this function returns '+str(no_of_output_args)+' arguments" );\n')
     file.write('end\n')
     file.write('if (rhs<>'+str(no_of_input_args)+') then \n')
     file.write('error("invalid number of arguments");\n')
@@ -95,7 +95,7 @@ def coding():
                 file.write(str(globals()['iarg%s'%i])+',')
     
     file.write(')\n')
-    file.write('end_function')
+    file.write('endfunction')
     
     file.close()
     return

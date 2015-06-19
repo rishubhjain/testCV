@@ -11,4 +11,4 @@ function[img_ret]=cv_gradient(image,kernal_type,kernal_size)
 	img_ret=0;
 	pyImport Gradient
     img_ret=Gradient.gradient(image,kernal_type,kernal_size)
-endfunctionn
+endfunction
