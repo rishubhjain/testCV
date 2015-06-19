@@ -4,12 +4,12 @@ import cv2
 import numpy as np
 import Kernal
 
-def close(image,kernel_type,kernel_size):
+def gradient(image,kernel_type,kernel_size):
     if image is None:
         print 'Error in input Image'
         return 0
     kernel=Kernel.kernel(kernel_type,kernel_size)
-    closing = cv2.morphologyEx( image, cv2.MORPH_CLOSE, kernel )
+    gradient = cv2.morphologyEx(image, cv2.MORPH_GRADIENT, kernel)
 
 
-    return closing
+    return  gradient
