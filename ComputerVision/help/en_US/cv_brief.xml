@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_brief" xml:lang="en">
+<refnamediv>
+<refname>cv_brief</refname>
+ <refpurpose>Feature Descriptor</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>kp,des=cv_brief(image,kp)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kp</term>
+<listitem>
+<para>Keypoints from Feature Extractor</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kp</term>
+<listitem>
+<para>Output Keypoints from Brief (Feature Descriptor)</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>des</term>
+<listitem>
+<para>KeyPoint Descriptor from Brief</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Feature Descriptor</para>
+<para>cv_brief fucntion takes an input image and keypoint related to that image obtained from the feature extractor like cv_surf and cv_sift. For more Information http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_brief/py_brief.html</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[keypoint,descriptor]=cv_brief(imput_image,keypoints_from_cv_surf)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_surf">cv_surf</link>
+<link linkend="cv_sift">cv_sift</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

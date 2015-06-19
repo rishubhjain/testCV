@@ -1,4 +1,3 @@
-
 function [image_ret] = cv_calchist(image,channels,mask,histsize,ranges) 
 	[lhs,rhs]=argn(0)
 
@@ -6,7 +5,7 @@ function [image_ret] = cv_calchist(image,channels,mask,histsize,ranges)
 		error("this function returns an image");
 	end
 	
-	if(rhs<>2) then
+	if(rhs<>5) then
 		error("invalid number of arguments");
 	end
 	

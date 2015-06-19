@@ -1,4 +1,5 @@
 //kp->keypoints
+
 function [kp,des] = cv_brief(image,kp) 
 	[lhs,rhs]=argn(0)
 	
