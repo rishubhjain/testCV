@@ -2,12 +2,12 @@
 
 import cv2
 import numpy as np
-
+import Kernel
 #color image
-def filter(image,depth):
+def filter(image,depth,kernel_type,kernel_size):
 
-    kernal = np.ones((5,5),np.float32)/25
+    kernel=Kernel.kernel(kernel_type,kernel_size)
     depth=int(depth)
-    dst = cv2.filter2D(image, depth, kernal)
+    dst = cv2.filter2D(image, depth, kernel)
     
     return dst

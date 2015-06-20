@@ -1,4 +1,4 @@
-function[img_ret]=cv_filter2D(image,depth) 
+function[img_ret]=cv_filter2D(image,depth,kernel_type,kernel_size) 
 	[lhs,rhs]=argn(0)
 
 	
@@ -7,13 +7,13 @@ function[img_ret]=cv_filter2D(image,depth)
 		error("this function returns an image");
 	end
 	
-	if(rhs<>2) then
+	if(rhs<>4) then
 		error("invalid number of arguments");
 	end
 	
     
     pyImport filter2D
-    img_ret=filter2D.filter(image,depth)
+    img_ret=filter2D.filter(image,depth,kernel_type,kernel_size)
 
 endfunction 
 

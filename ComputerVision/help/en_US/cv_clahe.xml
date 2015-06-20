@@ -2,12 +2,12 @@
 <refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_clahe" xml:lang="en">
 <refnamediv>
 <refname>cv_clahe</refname>
- <refpurpose>To provide Contrast Limited Adaptive Histogram Equalization</refpurpose>
+ <refpurpose>TO provide Contrast Limited Adaptive Histogram Equalization</refpurpose>
  </refnamediv>
 
 <refsynopsisdiv>
  <title>Calling Sequence</title> 
-<synopsis>img_ret=cv_clahe(image,clipLimit,tileGridSize)
+<synopsis>image_ret=cv_clahe(image,clipLimit,titleGridSize)
 </synopsis>
  </refsynopsisdiv>
 <refsection> 
@@ -26,8 +26,8 @@
 </listitem>
 </varlistentry>
 <varlistentry>
-<term>titeGridSize</term>
-<listitem>
+<term>titleGridSize</term>
+titem>
 <para>It takes list as input example:(5,5): Tilegridsize defines the size of tile/window size</para>
 </listitem>
 </varlistentry>
