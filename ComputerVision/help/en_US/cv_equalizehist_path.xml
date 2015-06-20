@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_equalizehist_path" xml:lang="en">
+<refnamediv>
+<refname>cv_equalizehist_path</refname>
+ <refpurpose>It is a method that improves the contrast in an image, in order to stretch out the intensity range.</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_equalizehist_path(Path)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>Path</term>
+<listitem>
+<para>Input the path of Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Image returned after applying method of equalizing Histogram</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>To Equalize the Histogram by equalizing the intensity at different places in Image. </para>
+<para>Histogram equalization is good when histogram of the image is confined to a particular region. It wont work good in places where there is large intensity variations where histogram covers a large region, ie both bright and dark pixels are present
+fir more details see: http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+image_ret = cv_equalizehist_path("../test/a.jpg")</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_calchist">cv_calchist</link>
+<link linkend="cv_blackhat">cv_blackhat</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

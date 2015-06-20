@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_clahe" xml:lang="en">
+<refnamediv>
+<refname>cv_clahe</refname>
+ <refpurpose>To provide Contrast Limited Adaptive Histogram Equalization</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_clahe(image,clipLimit,tileGridSize)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>clipLimit</term>
+<listitem>
+<para>It takes integer/float value and clips the histogram from using this value</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>titeGridSize</term>
+<listitem>
+<para>It takes list as input example:(5,5): Tilegridsize defines the size of tile/window size</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Image returned after clahe operation</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Contrast Limited Adaptive Histogram Equalization</para>
+<para>Here the Image is divided into small blocks/tiles Then each of this block are histogram equalized as usual</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img_ret = cv_clahe(image,clipLimit=2.0, tileGridSize=(8,8)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_bilateralfilter">cv_bilateralfilter</link>
+<link linkend="cv_calchist">cv_calchist</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

@@ -22,13 +22,13 @@
 <varlistentry>
 <term>kernel_type</term>
 <listitem>
-<para>It accepts the Integer/Float as Input  1->MORPH_RECT 2-> MORPH_ELLIPSE 3-> MORPH_CROSS</para>
+<para>It accepts Integer/Float as Input  1->MORPH_RECT 2-> MORPH_ELLIPSE 3-> MORPH_CROSS</para>
 </listitem>
 </varlistentry>
 <varlistentry>
 <term>kernel_size</term>
 <listitem>
-<para>It requires a list specifying the size of Kernel needed example (5,5)</para>
+<para>It accepts a list as input specifying the size of Kernel needed example (5,5)</para>
 </listitem>
 </varlistentry>
 <varlistentry>

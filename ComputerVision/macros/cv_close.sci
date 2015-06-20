@@ -1,4 +1,4 @@
-function[img_ret]=cv_close(image,kernal_type,kernal_size)
+function[img_ret]=cv_close(image,kernel_type,kernel_size)
    [lhs,rhs]=argn(0)
 	
 	if (lhs<>1) then
@@ -10,5 +10,5 @@ function[img_ret]=cv_close(image,kernal_type,kernal_size)
 	end
 
 	pyImport CLOSE
-    img_ret=CLOSE.close(image,kernal_type,kernal_size)
+    img_ret=CLOSE.close(image,kernel_type,kernel_size)
 endfunction

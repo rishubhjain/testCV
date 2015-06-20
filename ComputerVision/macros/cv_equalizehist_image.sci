@@ -1,4 +1,4 @@
-function [image_ret] = cv_equalizehist_image(image) 
+	function [image_ret] = cv_equalizehist_image(image) 
 	[lhs,rhs]=argn(0)
 	
 	if (lhs<>1) then
