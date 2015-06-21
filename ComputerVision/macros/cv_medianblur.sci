@@ -1,5 +1,5 @@
 
-function[img_ret]=cv_medianblur(image,ksize) 
+function[img_ret]=cv_medianblur(image,kernel_type,kernel_size) 
 	[lhs,rhs]=argn(0)
 
 	if (lhs<>1) then
@@ -12,7 +12,7 @@ function[img_ret]=cv_medianblur(image,ksize)
 	
     
     pyImport MedianBlur
-    img_ret=MedianBlur.medianblur(image,ksize)
+    img_ret=MedianBlur.medianblur(image,kernel_type,kernel_size)
 
     
 endfunction 
