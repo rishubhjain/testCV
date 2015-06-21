@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_filter2D" xml:lang="en">
+<refnamediv>
+<refname>cv_filter2D</refname>
+ <refpurpose>Provides operation of Filtering on Input Images</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_filter2D(image,depth,kernel_type,kernel_size)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>It is Input Image which is to be Filtered</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>depth</term>
+<listitem>
+<para>the output image depth (-1 to use src.depth()).</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_type</term>
+<listitem>
+<para>It accepts Integer/Float as Input  1->MORPH_RECT 2-> MORPH_ELLIPSE 3-> MORPH_CROSS</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_size</term>
+<listitem>
+<para>It accepts a list as input specifying the size of Kernel needed example (5,5)</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Image after filtering</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Provides 2D filtering using Kernel.</para>
+<para>As in one-dimensional signals, images also can be filtered with various low-pass filters(LPF), high-pass filters(HPF) etc. LPF helps in removing noises, blurring the images etc. HPF filters helps in finding edges in the images. for more details http://docs.opencv.org/master/d4/d13/tutorial_py_filtering.html</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img_ret=cv_filter2D(image,-1,1,[5,5])</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_blackhat">cv_blackhat</link>
+<link linkend="cv_calchist">cv_calchist</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

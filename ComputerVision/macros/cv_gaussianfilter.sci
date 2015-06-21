@@ -1,5 +1,5 @@
 
-function[img_ret]=gaussianFilter(img, ksize, sigmaX, sigmaY) 
+function[img_ret]=gaussianFilter(img, kernel_type,kernel_size, sigmaX, sigmaY) 
 	[lhs,rhs]=argn(0)
 	pyAddToPath(pathname)
 	
@@ -8,13 +8,13 @@ function[img_ret]=gaussianFilter(img, ksize, sigmaX, sigmaY)
 		error("this function returns an image");
 	end
 	
-	if(rhs<>4) then
+	if(rhs<>5) then
 		error("invalid number of input arguments");
 	end
 	
     
     pyImport GaussianFilter
-    img_ret=GaussianFilter.gaussianFilter(img, ksize, sigmaX, sigmaY)
+    img_ret=GaussianFilter.gaussianFilter(img,kernel_type,kernel_size, sigmaX, sigmaY)
 
     
 endfunction 

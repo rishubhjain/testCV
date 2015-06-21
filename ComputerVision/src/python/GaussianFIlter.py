@@ -6,21 +6,21 @@ sigmaY – Gaussian kernel standard deviation in Y direction; if sigmaY is zero, i
 
 import cv2
 import numpy as np
+import Kernel
 
-def gaussianFilter(img, ksize, sigmaX, sigmaY):
+def gaussianFilter(img, kernel_type,kernel_size, sigmaX, sigmaY):
 
     if img is None:
         print 'Error in input Image'
         return 0
 
-    kSize1 = int(ksize[0])
-    kSize2 = int(ksize[1])
+    
 
-    kSize = (kSize1, kSize2) 
+    Kernel.kernel(kernel_type,kernel_size)
     sigmaColor = int(sigmaX)
     sigmaSpace = int(sigmaY)
 
-    cv2.bilateralFilter(img, kSize, sigmaColor, sigmaSpace)
+    cv2.gaussianFilter(img, kSize, sigmaColor, sigmaSpace)
     
 
     return img
