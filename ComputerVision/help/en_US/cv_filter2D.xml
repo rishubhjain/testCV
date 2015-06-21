@@ -22,7 +22,7 @@
 <varlistentry>
 <term>depth</term>
 <listitem>
-<para>the output image depth (-1 to use src.depth()).</para>
+<para> the output image depth (-1 to use src.depth()).</para>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -48,7 +48,11 @@
 <refsection> 
 <title>Description</title>
 <para>Provides 2D filtering using Kernel.</para>
-<para>As in one-dimensional signals, images also can be filtered with various low-pass filters(LPF), high-pass filters(HPF) etc. LPF helps in removing noises, blurring the images etc. HPF filters helps in finding edges in the images. for more details http://docs.opencv.org/master/d4/d13/tutorial_py_filtering.html</para></refsection>
+<para>As in one-dimensional signals, images also can be filtered with various low-pass filters(LPF), high-pass filters(HPF) etc. LPF helps in removing noises, blurring the images etc. HPF filters helps in finding edges in the images.</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+ction>
 <refsection>
 <title>Examples</title>
 <programlisting role="example">
