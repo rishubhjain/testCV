@@ -15,6 +15,7 @@ cv_imread_path
 cv_imshow_image
 cv_imshow_path
 cv_medianblur
+cv_numpytomatrix
 cv_orb
 cv_otsu_binarization
 cv_prespective_transform

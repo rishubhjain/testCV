@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!--Begin Entities-->
+<!ENTITY aca0e261c32f00c80207d285b0cf05cdc SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_bilateralfilter.xml">
+<!ENTITY aa794f15227c700eb83309688d86fcadc SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_blackhat.xml">
+<!ENTITY a2c1627286e26ef18698ef9ba63ab23d9 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_blur.xml">
+<!ENTITY a9dca0d5de9422bcc1eb30b07f114ef53 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_brief.xml">
+<!ENTITY a9555244c567d43688654d42a59840fd5 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_calchist.xml">
+<!ENTITY af3c648915790839ba8abafad8628b25d SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_clahe.xml">
+<!ENTITY adace61de963c1986d4ec6850196aeaed SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_close.xml">
+<!ENTITY a3306d1f86a6695a685d348eb62a1702f SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_equalizehist_image.xml">
+<!ENTITY aaab91b21b48f88219d8308cd588ba5a3 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_equalizehist_path.xml">
+<!ENTITY a70195159e9dff40acd6b8120f286d852 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_filter2D.xml">
+<!ENTITY a0a179dd6532bd1f5014171534ea4e83a SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imread.xml">
+<!ENTITY a216bd356f7c84fd8111f7c78883cc4f7 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_image.xml">
+<!ENTITY a24eb4e8c56cf64578e02ffc51bf4abc9 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_path.xml">
+<!ENTITY aa59d67df24fdedca032eeed76984a57b SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_resize.xml">
+<!ENTITY afeb5eaa0e8451839b5a9c7786f78694b SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_rgb2gray_image.xml">
+<!ENTITY a95a7c8e32f8d65a653bf8b74323e3a0c SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_rgb2gray_path.xml">
+<!ENTITY a081b57c6dde21fc749761cff832c0d6a SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_rotate.xml">
+<!ENTITY a4262ca707902249e0a36674f0f85a183 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_test.xml">
+<!--End Entities-->
+]>
+<book version="5.0-subset Scilab" xml:lang="en_US"
+      xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info xml:id='computervision_manual'>
+    <title>ComputerVision</title>
+  </info>
+
+<part xml:id='section_892bc9e6304be8f6bd35050b924dc081'>
+<title>ComputerVision</title>
+&aca0e261c32f00c80207d285b0cf05cdc;
+&aa794f15227c700eb83309688d86fcadc;
+&a2c1627286e26ef18698ef9ba63ab23d9;
+&a9dca0d5de9422bcc1eb30b07f114ef53;
+&a9555244c567d43688654d42a59840fd5;
+&af3c648915790839ba8abafad8628b25d;
+&adace61de963c1986d4ec6850196aeaed;
+&a3306d1f86a6695a685d348eb62a1702f;
+&aaab91b21b48f88219d8308cd588ba5a3;
+&a70195159e9dff40acd6b8120f286d852;
+&a0a179dd6532bd1f5014171534ea4e83a;
+&a216bd356f7c84fd8111f7c78883cc4f7;
+&a24eb4e8c56cf64578e02ffc51bf4abc9;
+&aa59d67df24fdedca032eeed76984a57b;
+&afeb5eaa0e8451839b5a9c7786f78694b;
+&a95a7c8e32f8d65a653bf8b74323e3a0c;
+&a081b57c6dde21fc749761cff832c0d6a;
+&a4262ca707902249e0a36674f0f85a183;
+</part>
+</book>
