@@ -21,7 +21,7 @@ function[M]=cv_numpytomatrix(image)
 		mat3=Matrix.matrix_3d(image,3)
 		a=size(mat1);
 		
-		M=hypermat([a(1) a(2) 3];
+		M=hypermat([a(1) a(2) 3]);
 		M(:,:,1)=mat1;
 		M(:,:,2)=mat2;
 		M(:,:,3)=mat3;
