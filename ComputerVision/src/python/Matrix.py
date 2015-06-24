@@ -3,7 +3,7 @@ import numpy as np
 #grayscale image
 import cvcheck_channel
 
-def matrix_3d(image):
+def matrix_3d(image,flag):
     if image is None:
         print 'please check the Image'
         return 0
@@ -13,7 +13,14 @@ def matrix_3d(image):
     mat0=np.asmatrix(image1[0])
     mat1=np.asmatrix(image1[1])
     mat2=np.asmatrix(image1[2])
-    return mat0,mat1,mat2
+    if flag==1:
+        return mat0
+    elif flag==2:
+        return mat1
+    elif flag==3:
+        return mat2
+
+    return
     
     
 
