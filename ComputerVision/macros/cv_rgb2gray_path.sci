@@ -1,9 +1,11 @@
-
-
 function [image_ret] = cv_rgb2gray_path(path) 
 	[lhs,rhs]=argn(0)
-	
-  
+	image=cv_imread_path(path,1)
+	image=converttonumpy(image)
+	channel=cv_check_channel(image)
+	if (channel==2) then 
+		error("Please input an rgb/bgr image")
+	end
 	if (lhs<>1) then
 		error("this function returns an image");
 	end

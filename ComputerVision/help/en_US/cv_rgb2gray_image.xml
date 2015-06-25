@@ -37,7 +37,7 @@
         </refsection>
     <refsection>
         <title>Examples</title>
-        <programlisting role="example">image=cv_rgb2gray_image(Img)</programlisting>
+        <programlisting role="example">image=cv_rgb2gray_image(input_image)</programlisting>
 		
     </refsection>
     <refsection role="see also">

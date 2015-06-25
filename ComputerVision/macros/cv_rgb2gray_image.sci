@@ -1,10 +1,9 @@
-
 function [image_ret] = cv_rgb2gray_image(image) 
 	[lhs,rhs]=argn(0)
-	pyImport cvcheck_channel
-	x=cvcheck_channel.check_channel(image);
-	if(x==2)
-		error("please input a rgb/bgr Image")
+	image=converttonumpy(image)
+	channel=cv_check_channel(image)
+	if (channel==2) then 
+		error("Please input an rgb/bgr image")
 	end
 
 	if (lhs<>1) then
