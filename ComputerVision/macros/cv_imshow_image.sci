@@ -1,4 +1,4 @@
-function[image]=cv_imshow_image(image)
+function[]=cv_imshow_image(image)
 	[lhs,rhs]=argn(0)
 	
 	
@@ -8,8 +8,10 @@ function[image]=cv_imshow_image(image)
 	if(rhs<>1) then
 		error("invalid number of arguments");
 	end
+	image=converttonumpy(image);
 	
 	pyImport imshow_image
 	
-    image=imshow_image.imshow(path)
+    imshow_image.imshow(image)
+
 endfunction

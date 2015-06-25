@@ -6,13 +6,13 @@ function[img_ret]=cv_medianblur(image,kernel_type,kernel_size)
 		error("this function returns an image");
 	end
 	
-	if(rhs<>2) then
+	if(rhs<>3) then
 		error("invalid number of input arguments");
 	end
 	
     
-    pyImport MedianBlur
-    img_ret=MedianBlur.medianblur(image,kernel_type,kernel_size)
+    pyImport Medianblur
+    img_ret=Medianblur.medianblur(image,kernel_type,kernel_size)
 
     
 endfunction 

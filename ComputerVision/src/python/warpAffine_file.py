@@ -2,35 +2,43 @@
 
 import cv2
 import numpy as np
-
+import cvcheck_channel
 def warpAffine_path(path,x,y):
 
-    read_origional = cv2.imread(path,0)
+    image= cv2.imread(path)
+    if image is None:
+        print "Wrong image"
+        return 0
     x=int(x)
     y=int(y)
-
-    rows,cols = read_origional.shape
-
+    if cvcheck_channel.check_channel(image)==2:
+        rows,cols = image.shape
+    elif cvcheck_channel.check_channel(image)==3:
+        rows,cols,depth = image.shape
     X = np.float32([[1,0,x],[0,1,y]])
 
-    trasformation = cv2.warpAffine(read_origional, X, (cols,rows))
+    trasformation = cv2.warpAffine(image, X, (cols,rows))
 
     return trasformation
 
-#image should be grayscale
 
 
-def warpAffine_image(img,x,y):
 
-    read_origional = img
-        
+def warpAffine_image(image,x,y):
+    
     x=int(x)
     y=int(y)
-    rows,cols = read_origional.shape
-
+    if image is None:
+        print "Wrong image"
+        return 0
+    if cvcheck_channel.check_channel(image)==2:
+        rows,cols = image.shape
+    elif cvcheck_channel.check_channel(image)==3:
+        rows,cols,depth = image.shape
+    
     X = np.float32([[1,0,x],[0,1,y]])
 
-    trasformation = cv2.warpAffine(read_origional, X, (cols,rows))
+    trasformation = cv2.warpAffine(image, X, (cols,rows))
 
 
     return trasformation

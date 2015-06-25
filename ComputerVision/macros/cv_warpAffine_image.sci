@@ -5,10 +5,10 @@ function [img_ret]=cv_warpAffine_image(image,x,y)
 		error("this function returns an image");
 	end
 	
-	if(rhs<>1) then
+	if(rhs<>3) then
 		error("invalid number of arguments");
 	end
-	
+	image=converttonumpy(image)
 	pyImport warpAffine_file
     img_ret=warpAffine_file.warpAffine_image(image,x,y)
 endfunction

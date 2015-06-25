@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_warpAffine_image" xml:lang="en">
+<refnamediv>
+<refname>cv_warpAffine_image</refname>
+ <refpurpose>TO provide Affine transformation</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_warpAffine_image(image,x,y)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>It is the Input Image that is to be transformed</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>x</term>
+<listitem>
+<para>x coordinate by which image is to be transformed (integer)</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>y</term>
+<listitem>
+<para>x coordinate by which image is to be transformed (integer)</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Image returned after affine transformed</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Affine Transform</para>
+<para>Translation is the shifting of object’s location. If you know the shift in (x,y) direction then you could shift the image by x and y coordinated</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img_ret=cv_warpAffine_image(input_image,100,200)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_bilateralfilter">cv_bilateralfilter</link>
+<link linkend="cv_warpAffine_path">cv_warpAffine_path</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>
