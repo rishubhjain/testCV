@@ -8,8 +8,5 @@ function [resize_image] = cv_resize(image, height,width,interpolation_unit)
     image=converttonumpy(image)
     pyImport Resize
     resize_image=Resize.resize1(image,height,width,interpolation_unit)
-		
-		
-    
-    
+  
 endfunction 

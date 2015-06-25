@@ -9,6 +9,7 @@ function[img_ret]=cv_gradient(image,kernal_type,kernal_size)
 		error("invalid number of arguments");
 	end
 	img_ret=0;
+	image=converttonumpy(image)
 	pyImport Gradient
     img_ret=Gradient.gradient(image,kernal_type,kernal_size)
 endfunction

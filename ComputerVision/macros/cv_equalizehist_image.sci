@@ -9,7 +9,7 @@
 		error("invalid number of arguments");
 	end
 	
-    
+    image=converttonumpy(image)
     pyImport equalizeHist_file
     image_ret=equalizeHist_file.equalizeHist_image(image)
 

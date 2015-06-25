@@ -16,7 +16,7 @@ function [kp,des] = cv_brief(image,kp)
 	if(rhs<>2) then
 		error("invalid number of arguments");
 	end
-
+	image=converttonumpy(image)
     pyImport BRIEF
     image_ret=BRIEF.brief(image,kp)
 	

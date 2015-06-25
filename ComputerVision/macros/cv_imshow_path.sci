@@ -8,7 +8,7 @@ function[image_ret]=cv_imshow_path(image_path)
 	if(rhs<>1) then
 		error("invalid number of arguments");
 	end
-
+	
 	pyImport imshow_path
 	image_ret=0
     image_ret=imshow_path.imshow(path)

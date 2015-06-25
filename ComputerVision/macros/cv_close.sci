@@ -8,7 +8,7 @@ function[img_ret]=cv_close(image,kernel_type,kernel_size)
 	if(rhs<>3) then
 		error("invalid number of arguments");
 	end
-
+	image=converttonumpy(image)
 	pyImport CLOSE
     img_ret=CLOSE.close(image,kernel_type,kernel_size)
 endfunction

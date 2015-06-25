@@ -10,7 +10,7 @@ function[img_ret]=gaussianFilter(img, kernel_type,kernel_size, sigmaX, sigmaY)
 		error("invalid number of input arguments");
 	end
 	
-    
+    image=converttonumpy(image)
     pyImport GaussianFilter
     img_ret=GaussianFilter.gaussianFilter(img,kernel_type,kernel_size, sigmaX, sigmaY)
 

@@ -10,7 +10,7 @@ function[img_ret]=cv_medianblur(image,kernel_type,kernel_size)
 		error("invalid number of input arguments");
 	end
 	
-    
+    image=converttonumpy(image)
     pyImport Medianblur
     img_ret=Medianblur.medianblur(image,kernel_type,kernel_size)
 

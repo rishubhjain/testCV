@@ -9,7 +9,7 @@ function[img_ret]=cv_blur(image,kernel_type,kernel_size)
 	if(rhs<>3) then
 	error("invalid number of input arguments");
 	end
-	
+	image=converttonumpy(image)
     img_ret=0
     pyImport Blur
     img_ret=Blur.blur(image,kernel_type,kernel_size)    

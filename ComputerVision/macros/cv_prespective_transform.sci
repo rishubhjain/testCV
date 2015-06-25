@@ -1,7 +1,5 @@
-function [image_ret] = cv_prespective_transform(image,x1,x2,x3,x4,y1,y2,y3,y4) 
+function [image_ret] = cv_prespective_transform(image,p1,p2,p3,p4) 
 	[lhs,rhs]=argn(0)
-	
-	
 	
 	if (lhs<>1) then
 		error("this function returns an image");
@@ -11,9 +9,9 @@ function [image_ret] = cv_prespective_transform(image,x1,x2,x3,x4,y1,y2,y3,y4)
 		error("invalid number of arguments");
 	end
 	
-    
+    image=converttonumpy(image)
     pyImport prespective
-    image_ret=prespective.prespective_trans(image,x1,x2,x3,x4,y1,y2,y3,y4)
+    image_ret=prespective.prespective_trans(image,p1[1],p2[1],p3[1],p4[1],p1[2],p2[2],p3[2],p4[2])
 	
     
 endfunction 

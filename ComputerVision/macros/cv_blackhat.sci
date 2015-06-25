@@ -8,6 +8,7 @@ function[img_ret]=cv_blackhat(image,kernel_type,kernel_size)
 	if(rhs<>3) then
 		error("invalid number of arguments");
 	end
+	image=converttonumpy(image)
 	img_ret=0;
 	pyImport Blackhat
     img_ret=Blackhat.blackhat(image,kernel_type,kernel_size)

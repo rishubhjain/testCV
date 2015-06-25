@@ -9,7 +9,7 @@ function [image_ret] = cv_calchist(image,channels,mask,histsize,ranges)
 		error("invalid number of arguments");
 	end
 	
-    
+    image=converttonumpy(image)
     pyImport calchist
     image_ret=calchist.histogram2d(image,channels,mask,histsize,ranges)
     

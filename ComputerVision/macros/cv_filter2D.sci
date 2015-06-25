@@ -11,7 +11,7 @@ function[img_ret]=cv_filter2D(image,depth,kernel_type,kernel_size)
 		error("invalid number of arguments");
 	end
 	
-    
+    image=converttonumpy(image)
     pyImport filter2D
     img_ret=filter2D.filter(image,depth,kernel_type,kernel_size)
 
