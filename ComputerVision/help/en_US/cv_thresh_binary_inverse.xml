@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_thresh_binary" xml:lang="en">
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_thresh_binary_inverse" xml:lang="en">
 <refnamediv>
-<refname>cv_thresh_binary</refname>
- <refpurpose>Proivdes Binary thresholding</refpurpose>
+<refname>cv_thresh_binary_inverse</refname>
+ <refpurpose>Proivdes Inverse Binary thresholding</refpurpose>
  </refnamediv>
 
 <refsynopsisdiv>
@@ -41,18 +41,18 @@
 </refsection>
 <refsection> 
 <title>Description</title>
-<para>Binary Thresholding</para>
-<para>Thresholding is a process where  If pixel value is greater than a arbitrary value, it is assigned one value (may be white), else it is assigned another value (may be white).</para></refsection>
+<para>Inverse Binary Thresholding</para>
+<para>Thresholding is a process where  If pixel value is greater than a arbitrary value, it is assigned one value (may be white), else it is assigned another value (may be white).Inverse Operation provides Inversion operation on the image</para></refsection>
 <refsection>
 <title>Examples</title>
 <programlisting role="example">
-img_ret=cv_thresh_binary(input_image,127,255);</programlisting>
+img_ret=cv_thresh_binary_inverse(input_image,127,255);</programlisting>
 </refsection>
 <refsection role="see also">
 <title>See Also</title>
 <simplelist type="inline">
 <member>
-<link linkend="cv_bilateralfilter">cv_thresh_binary_inverse</link>
+<link linkend="cv_bilateralfilter">cv_thresh_binary</link>
 <link linkend="cv_thresh_tozero">cv_thresh_tozero</link>
 </member>
 </simplelist>
