@@ -33,7 +33,7 @@
     <refsection>
         <title>Description</title>
         <para>Convert the RGB image into grayscale</para>
-        <para>Image is  provided by user, then the image is converted into grayscale and grayscale image is returned to the user via output variable </para>
+        <para>Image is  provided by user, then the image is converted into grayscale and grayscale image is returned to the user via output variable. Converting rgb image into grayscale using this function preserves depth of the image. </para>
         </refsection>
     <refsection>
         <title>Examples</title>
