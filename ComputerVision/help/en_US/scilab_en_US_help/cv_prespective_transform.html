@@ -1,0 +1,84 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>cv_prespective_transform</title>
+    <style type="text/css" media="all">
+      @import url("scilab_code.css");
+      @import url("xml_code.css");
+      @import url("c_code.css");
+      @import url("style.css");
+    </style>
+  </head>
+  <body>
+    <div class="manualnavbar">
+    <table width="100%"><tr>
+      <td width="30%">
+    	<span class="previous"><a href="cv_imshow_path.html">&lt;&lt; cv_imageshow_path</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_892bc9e6304be8f6bd35050b924dc081.html">ComputerVision</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="cv_resize.html">cv_resize &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+
+
+
+    <span class="path"><a href="index.html">ComputerVision</a> &gt;&gt; <a href="section_892bc9e6304be8f6bd35050b924dc081.html">ComputerVision</a> &gt; cv_prespective_transform</span>
+
+    <br /><br />
+    <div class="refnamediv"><h1 class="refname">cv_prespective_transform</h1>
+ <p class="refpurpose">Provides Transformation</p></div>
+
+<div class="refsynopsisdiv"><h3 class="title">Calling Sequence</h3> 
+<div class="synopsis"><pre><span class="default">img_ret</span><span class="default">=</span><span class="functionid">cv_prespective_transform</span><span class="default">(</span><span class="default">p1</span><span class="default">,</span><span class="default">p2</span><span class="default">,</span><span class="default">p3</span><span class="default">,</span><span class="default">p4</span><span class="default">,)</span></pre></div></div>
+<div class="refsection"><h3 class="title">Arguments</h3>
+<dl><dt><span class="term">p1</span>
+/term&gt;
+<dd><p class="para">Input Image can be grayscale or rgb</p></dd></dt>
+<dt><span class="term">p1</span>
+<dd><p class="para">point 1, must be list : example [1,1]</p></dd></dt>
+<dt><span class="term">p2</span>
+<dd><p class="para">point 2, must be list : example [1,1]</p></dd></dt>
+<dt><span class="term">p3</span>
+<dd><p class="para">point 3, must be list : example [1,1]</p></dd></dt>
+<dt><span class="term">p4</span>
+<dd><p class="para">point 4, must be list : example [1,1]</p></dd></dt>
+<dt><span class="term">img_ret</span>
+<dd><p class="para">return image after transformation</p></dd></dt></dl></div>
+<div class="refsection"><h3 class="title">Description</h3>
+<p class="para">Prespective transform</p>
+<p class="para">For perspective transformation, you need a 3x3 transformation matrix. Straight lines will remain straight even after the transformation. To find this transformation matrix, you need 4 points on the input image and corresponding points on the output image. Among these 4 points, 3 of them should not be collinear. Then transformation matrix can be found by this function</p></div>
+<div class="refsection"><h3 class="title">Examples</h3>
+<div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabid">img_ret</span><span class="scilaboperator">=</span><span class="scilabid">cv_prespective_transform</span><span class="scilabopenclose">(</span><span class="scilabid">input_image</span><span class="scilabdefault">,</span><span class="scilabopenclose">[</span><span class="scilabnumber">1</span><span class="scilabdefault">,</span><span class="scilabnumber">2</span><span class="scilabopenclose">]</span><span class="scilabdefault">,</span><span class="scilabopenclose">[</span><span class="scilabnumber">4</span><span class="scilabdefault">,</span><span class="scilabnumber">5</span><span class="scilabopenclose">]</span><span class="scilabdefault">,</span><span class="scilabopenclose">[</span><span class="scilabnumber">5</span><span class="scilabdefault">,</span><span class="scilabnumber">6</span><span class="scilabopenclose">]</span><span class="scilabdefault">,</span><span class="scilabopenclose">[</span><span class="scilabnumber">2</span><span class="scilabdefault">,</span><span class="scilabnumber">4</span><span class="scilabopenclose">]</span><span class="scilabopenclose">)</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
+<div class="refsection"><h3 class="title">See Also</h3>
+<ul class="itemizedlist"><li class="member"><a href="scilab://cv_warpAffine" class="link">cv_warpAffine</a>
+<a href="cv_resize.html" class="link">cv_resize</a> &#8212; Resize Image</li></ul></div>
+    <br />
+
+    <div class="manualnavbar">
+    <table width="100%">
+    <tr><td colspan="3" class="next"><a href="http://bugzilla.scilab.org/enter_bug.cgi?product=Scilab%20software&component=Documentation%20pages" class="ulink">Report an issue</a></td></tr>
+<tr>
+      <td width="30%">
+    	<span class="previous"><a href="cv_imshow_path.html">&lt;&lt; cv_imageshow_path</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_892bc9e6304be8f6bd35050b924dc081.html">ComputerVision</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="cv_resize.html">cv_resize &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+  </body>
+</html>

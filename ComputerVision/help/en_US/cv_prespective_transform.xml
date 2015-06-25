@@ -7,14 +7,15 @@
 
 <refsynopsisdiv>
  <title>Calling Sequence</title> 
-<synopsis>img_ret=cv_prespective_transform(image,p1,p2,p3,p4)
+<synopsis>img_ret=cv_prespective_transform(p1,p2,p3,p4,)
 </synopsis>
  </refsynopsisdiv>
 <refsection> 
 <title>Arguments</title>
 <variablelist>
 <varlistentry>
-<term>image</term>
+<term>p1</term>
+/term>
 <listitem>
 <para>Input Image can be grayscale or rgb</para>
 </listitem>

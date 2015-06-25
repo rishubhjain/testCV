@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_thresh_binary" xml:lang="en">
+<refnamediv>
+<refname>cv_thresh_binary</refname>
+ <refpurpose>Porivdes Binary thresholding</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_thresh_binary(image,threshold,maxVal)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image. It should be grayscale, It will be copy/converted to grayscale image If rgb image is given</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>threshold</term>
+<listitem>
+<para>It is the threshold value which is used to classify the pixel values. It should be Integer</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>maxVal</term>
+<listitem>
+<para>It represents the value to be given if pixel value is more than (sometimes less than) the threshold value.It should be integer</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Output Image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Binary THresholding</para>
+<para>Thresholding is a process where  If pixel value is greater than a arbitrary value, it is assigned one value (may be white), else it is assigned another value (may be white).</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img_ret=cv_thresh_binary(input_image,127,255);</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_bilateralfilter">cv_bilateralfilter</link>
+<link linkend="cv_thresh_tozero">cv_thresh_tozero</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

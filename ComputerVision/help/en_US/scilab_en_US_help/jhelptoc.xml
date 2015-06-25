@@ -16,6 +16,7 @@
 <tocitem target="cv_imread_path" text="cv_imread_path"/>
 <tocitem target="cv_imshow_image" text="cv_imageshow_image"/>
 <tocitem target="cv_imshow_path" text="cv_imageshow_path"/>
+<tocitem target="cv_prespective_transform" text="cv_prespective_transform"/>
 <tocitem target="cv_resize" text="cv_resize"/>
 <tocitem target="cv_rgb2gray_image" text="cv_rgb2gray_image"/>
 <tocitem target="cv_rgb2gray_path" text="cv_rgb2gray_path"/>
@@ -23,6 +24,7 @@
 <tocitem target="cv_sift" text="cv_sift"/>
 <tocitem target="cv_surf" text="cv_surf"/>
 <tocitem target="cv_test" text="cv_test"/>
+<tocitem target="cv_thresh_binary" text="cv_thresh_binary"/>
 <tocitem target="cv_tophat" text="cv_tophat"/>
 <tocitem target="cv_warpAffine_image" text="cv_warpAffine_image"/>
 <tocitem target="cv_warpAffine_path" text="cv_warpAffine_path"/>

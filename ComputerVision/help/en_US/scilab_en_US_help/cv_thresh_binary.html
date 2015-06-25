@@ -1,0 +1,79 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>cv_thresh_binary</title>
+    <style type="text/css" media="all">
+      @import url("scilab_code.css");
+      @import url("xml_code.css");
+      @import url("c_code.css");
+      @import url("style.css");
+    </style>
+  </head>
+  <body>
+    <div class="manualnavbar">
+    <table width="100%"><tr>
+      <td width="30%">
+    	<span class="previous"><a href="cv_test.html">&lt;&lt; cv_test</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_892bc9e6304be8f6bd35050b924dc081.html">ComputerVision</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="cv_tophat.html">cv_tophat &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+
+
+
+    <span class="path"><a href="index.html">ComputerVision</a> &gt;&gt; <a href="section_892bc9e6304be8f6bd35050b924dc081.html">ComputerVision</a> &gt; cv_thresh_binary</span>
+
+    <br /><br />
+    <div class="refnamediv"><h1 class="refname">cv_thresh_binary</h1>
+ <p class="refpurpose">Porivdes Binary thresholding</p></div>
+
+<div class="refsynopsisdiv"><h3 class="title">Calling Sequence</h3> 
+<div class="synopsis"><pre><span class="default">img_ret</span><span class="default">=</span><span class="functionid">cv_thresh_binary</span><span class="default">(</span><span class="default">image</span><span class="default">,</span><span class="default">threshold</span><span class="default">,</span><span class="default">maxVal</span><span class="default">)</span></pre></div></div>
+<div class="refsection"><h3 class="title">Arguments</h3>
+<dl><dt><span class="term">image</span>
+<dd><p class="para">Input Image. It should be grayscale, It will be copy/converted to grayscale image If rgb image is given</p></dd></dt>
+<dt><span class="term">threshold</span>
+<dd><p class="para">It is the threshold value which is used to classify the pixel values. It should be Integer</p></dd></dt>
+<dt><span class="term">maxVal</span>
+<dd><p class="para">It represents the value to be given if pixel value is more than (sometimes less than) the threshold value.It should be integer</p></dd></dt>
+<dt><span class="term">img_ret</span>
+<dd><p class="para">Output Image</p></dd></dt></dl></div>
+<div class="refsection"><h3 class="title">Description</h3>
+<p class="para">Binary THresholding</p>
+<p class="para">Thresholding is a process where  If pixel value is greater than a arbitrary value, it is assigned one value (may be white), else it is assigned another value (may be white).</p></div>
+<div class="refsection"><h3 class="title">Examples</h3>
+<div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabid">img_ret</span><span class="scilaboperator">=</span><span class="scilabid">cv_thresh_binary</span><span class="scilabopenclose">(</span><span class="scilabid">input_image</span><span class="scilabdefault">,</span><span class="scilabnumber">127</span><span class="scilabdefault">,</span><span class="scilabnumber">255</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
+<div class="refsection"><h3 class="title">See Also</h3>
+<ul class="itemizedlist"><li class="member"><a href="cv_bilateralfilter.html" class="link">cv_bilateralfilter</a> &#8212; Bilateral Filtering the Input Image
+<a href="scilab://cv_thresh_tozero" class="link">cv_thresh_tozero</a></li></ul></div>
+    <br />
+
+    <div class="manualnavbar">
+    <table width="100%">
+    <tr><td colspan="3" class="next"><a href="http://bugzilla.scilab.org/enter_bug.cgi?product=Scilab%20software&component=Documentation%20pages" class="ulink">Report an issue</a></td></tr>
+<tr>
+      <td width="30%">
+    	<span class="previous"><a href="cv_test.html">&lt;&lt; cv_test</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_892bc9e6304be8f6bd35050b924dc081.html">ComputerVision</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="cv_tophat.html">cv_tophat &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+  </body>
+</html>

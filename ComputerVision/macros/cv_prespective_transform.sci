@@ -11,7 +11,7 @@ function [image_ret] = cv_prespective_transform(image,p1,p2,p3,p4)
 	
     image=converttonumpy(image)
     pyImport prespective
-    image_ret=prespective.prespective_trans(image,p1[1],p2[1],p3[1],p4[1],p1[2],p2[2],p3[2],p4[2])
+    image_ret=prespective.prespective_trans(image,p1(1),p2(1),p3(1),p4(1),p1(2),p1(2),p1(2),p1(2))
 	
     
 endfunction 

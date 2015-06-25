@@ -29,6 +29,12 @@ cv_sift
 cv_size
 cv_surf
 cv_test
+cv_thresh_binary
+cv_thresh_inverse
+cv_thresh_tozero
+cv_thresh_truncate
+cv_threshold_gaussian
+cv_threshold_mean
 cv_tophat
 cv_warpAffine_image
 cv_wrapAffine_path
