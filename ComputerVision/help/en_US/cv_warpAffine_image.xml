@@ -42,7 +42,7 @@
 <refsection> 
 <title>Description</title>
 <para>Affine Transform</para>
-<para>Translation is the shifting of object’s location. If you know the shift in (x,y) direction then you could shift the image by x and y coordinated</para></refsection>
+<para>Translation is the shifting of objects location. If you know the shift in (x,y) direction then you could shift the image by x and y coordinated</para></refsection>
 <refsection>
 <title>Examples</title>
 <programlisting role="example">

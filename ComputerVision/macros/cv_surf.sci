@@ -1,29 +1,22 @@
 
-function [kp,des] = cv_surf(image,hessianThreshold) 
+function [kp,des] = cv_surf(image,hessianThreshold,Upright) 
 	[lhs,rhs]=argn(0)
 
-	
-	pyImport cvcheck_channel
-	channel=cvcheck_channel.check_channel(image);
-	if(channel==3) then
-		error("Please input a grayscale Image")
-	end
-	
 	if (lhs<>2) then
-		error("this function returns an image");
+		error("This function returns an keypoints and descriptors");
 	end
 	
-	if(rhs<>2) then
-		error("invalid number of arguments");
+	if(rhs<>3) then
+		error("Invalid number of arguments");
 	end
 	
-    
-    pyImport surf
-    [kp,des]=surf.SURF(image,hessianThreshold);
+    image=converttonumpy(image);
+    pyImport Surf
+    a=Surf.SURF(image,hessianThreshold,Upright);
+	kp=a(0)
+	des=a(1)
 	if(kp==0) then
 		error("Please check input Image")
 	end
 	
-    
-    
 endfunction 

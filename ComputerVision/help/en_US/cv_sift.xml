@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_sift" xml:lang="en">
+<refnamediv>
+<refname>cv_sift</refname>
+ <refpurpose>To perform Scale-Invariant Feature Transform</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>kp=cv_sift(image)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image rgb/grayscale</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kp</term>
+<listitem>
+<para>Keypoints in the image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Scale-Invariant Feature Transform</para>
+<para>This function returns keypoints found by sift, it also considers orientation.Please refer http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_sift_intro/py_sift_intro.html</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+kp=cv_sift(input_image);</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_surf">cv_surf</link>
+<link linkend="cv_brief">cv_brief</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

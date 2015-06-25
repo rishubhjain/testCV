@@ -27,7 +27,7 @@
 </varlistentry>
 <varlistentry>
 <term>titleGridSize</term>
-titem>
+<listitem>
 <para>It takes list as input example:(5,5): Tilegridsize defines the size of tile/window size</para>
 </listitem>
 </varlistentry>

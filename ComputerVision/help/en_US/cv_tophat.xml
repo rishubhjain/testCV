@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_tophat" xml:lang="en">
+<refnamediv>
+<refname>cv_tophat</refname>
+ <refpurpose>To provide tophat morphological operation</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_tophat(image,kernel_type,kernel_size)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>It is the Input Image (grayscale/rgb)</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_type</term>
+<listitem>
+<para>It accepts Integer/Float as Input  1->MORPH_RECT 2-> MORPH_ELLIPSE 3-> MORPH_CROSS</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_size</term>
+<listitem>
+<para>It accepts a list as input specifying the size of Kernel needed: example [5,5]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Returned Image after tophat operation</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Performs tophat  operation</para>
+<para>Tophat gives the difference between input image and Opening of the image.Morphological transformations are some simple operations based on the image shape. It is normally performed on binary images. Two basic morphological operators are Erosion and Dilation. Then its variant forms like Opening, Closing, Gradient etc also comes into play</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img_ret=cv_tophat(input_image,1,[5,5])</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_blackhat">cv_blackhat</link>
+<link linkend="cv_erode">cv_erode</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

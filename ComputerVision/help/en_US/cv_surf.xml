@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_surf" xml:lang="en">
+<refnamediv>
+<refname>cv_surf</refname>
+ <refpurpose>To provide surf Feature Extraction</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>kp,des=cv_surf(image,hessianThreshold,Upright)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image (grayscale/rgb) </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>hessianThreshold</term>
+<listitem>
+<para>threshold determines how large the output from the Hessian filter must be in order for a point to be used as an interest point. It must be an integer value</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Upright</term>
+<listitem>
+<para>it is used to consider orientation. True-> would not consider orientaion , False->would consider orientation. Value must be either True or False</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kp</term>
+<listitem>
+<para>Keypoints</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>des</term>
+<listitem>
+<para>descriptors</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Speeded-Up Robust Features</para>
+<para> SURF functionalities just like SIFT. You initiate a SURF object with some optional conditions like 64/128-dim descriptors, Upright/Normal SURF etc..for more information please see http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_surf_intro/py_surf_intro.html</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[kp,des]=cv_surf(input_image,400,"True")</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_brief">cv_brief</link>
+<link linkend="cv_sift">cv_sift</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

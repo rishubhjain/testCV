@@ -18,7 +18,12 @@
 <!ENTITY afeb5eaa0e8451839b5a9c7786f78694b SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_rgb2gray_image.xml">
 <!ENTITY a95a7c8e32f8d65a653bf8b74323e3a0c SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_rgb2gray_path.xml">
 <!ENTITY a081b57c6dde21fc749761cff832c0d6a SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_rotate.xml">
+<!ENTITY a61d5205e3a0129d9ed99bdd4994f252c SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_sift.xml">
+<!ENTITY ac3f1a803554e6f783e34d13368729f2d SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_surf.xml">
 <!ENTITY a4262ca707902249e0a36674f0f85a183 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_test.xml">
+<!ENTITY a81359713e2b4b823335a20b61d1ecc32 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_tophat.xml">
+<!ENTITY a6c7427e40c1428328f8b1966861c1172 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_warpAffine_image.xml">
+<!ENTITY af24c8fa7b6d30e0d458f124536b1f6a0 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_warpAffine_path.xml">
 <!--End Entities-->
 ]>
 <book version="5.0-subset Scilab" xml:lang="en_US"
@@ -52,6 +57,11 @@
 &afeb5eaa0e8451839b5a9c7786f78694b;
 &a95a7c8e32f8d65a653bf8b74323e3a0c;
 &a081b57c6dde21fc749761cff832c0d6a;
+&a61d5205e3a0129d9ed99bdd4994f252c;
+&ac3f1a803554e6f783e34d13368729f2d;
 &a4262ca707902249e0a36674f0f85a183;
+&a81359713e2b4b823335a20b61d1ecc32;
+&a6c7427e40c1428328f8b1966861c1172;
+&af24c8fa7b6d30e0d458f124536b1f6a0;
 </part>
 </book>
