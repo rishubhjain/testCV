@@ -1,4 +1,20 @@
-function[img_ret]=cv_thresh_truncate(image)
-    pyImport simple_thresholding
-    img_ret=simple_thresholding.thresh_trunc(image)
+function[img_ret]=cv_thresh_truncate(image,threshold,maxVal)
+    image=converttonumpy(image)
+	[lhs,rhs]=argn(0)	
+	if (cv_check_channel(image)==3) then
+		warning("This function applies on only grayscale image so the image will be copy/converted to grayscale")
+		image1=cv_rgb2gray_image(image)
+	end
+	
+	if (lhs<>1) then
+		error("this function returns an image");
+	end
+	
+	if(rhs<>3) then
+		error("invalid number of arguments");
+	end
+	image=converttonumpy(image1)
+	
+	pyImport Thresh_trunc
+    img_ret=Thresh_trunc.thresh_trunc(image,threshold,maxVal)
 endfunction

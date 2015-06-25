@@ -1,5 +1,6 @@
-function[img_ret]=cv_threshold_gaussian(image,threshold,maxVal)
-    image=converttonumpy(image)
+
+function[img_ret]=cv_thresh_tozero_inverse(image,threshold,maxVal)
+	image=converttonumpy(image)
 	[lhs,rhs]=argn(0)	
 	if (cv_check_channel(image)==3) then
 		warning("This function applies on only grayscale image so the image will be copy/converted to grayscale")
@@ -14,7 +15,6 @@ function[img_ret]=cv_threshold_gaussian(image,threshold,maxVal)
 		error("invalid number of arguments");
 	end
 	image=converttonumpy(image1)
-	
-	pyImport adaptive_threshold
-    img_ret=adaptive_threshold.adaptive_thresh_gaussian(image,threshold,maxVal)
+    pyImport Thresh_tozero_inv
+    img_ret=Thresh_tozero_inv.thresh_tozero_inv(image,threshold,maxVal)
 endfunction

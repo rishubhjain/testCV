@@ -1,11 +1,13 @@
 import cv2
 import numpy as np
-#from matplotlib import pyplot as plt
 
-
-
-def thresh_trunc(image):
-    read_original = image
-    ret,thresh3 = cv2.threshold(read_original, 100, 255, cv2.THRESH_TRUNC)
-    dst = np.hstack((read_original,thresh3))
-    return dst
+def thresh_trunc(image,threshold,maxVal):
+    if image is None:
+        print "Please enter correct Image"
+        return 0
+    threshold=int(threshold)
+    
+    maxVal=int(maxVal)
+    ret,thresh3 = cv2.threshold(image, threshold, maxVal, cv2.THRESH_TRUNC)
+    
+    return thresh3

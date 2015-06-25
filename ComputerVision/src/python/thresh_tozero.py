@@ -1,8 +1,13 @@
 import cv2
 import numpy as np
 #from matplotlib import pyplot as plt
-def  thresh_tozero(image):
-    read_original = image
-    ret,thresh4 = cv2.threshold(read_original, 135, 255, cv2.THRESH_TOZERO)
-    dst = np.hstack((read_original,thresh4))
-    return dst
+def  thresh_tozero(image,threshold,maxVal):
+    if image is None:
+        print "Please enter correct Image"
+        return 0
+    threshold=int(threshold)
+    
+    maxVal=int(maxVal)
+    ret,thresh4 = cv2.threshold(image, threshold, maxVal, cv2.THRESH_TOZERO)
+    
+    return thresh4
