@@ -18,13 +18,13 @@
             <varlistentry>
                 <term>image</term>
                 <listitem>
-                    <para>Image to be Rotated</para>
+                    <para>Image to be Rotated grayscale/rgb</para>
                 </listitem>
             </varlistentry>
 			<varlistentry>
                 <term>angle</term>
                 <listitem>
-                    <para>Angle with which the image is to be rotated</para>
+                    <para>Angle with which the image is to be rotated integer</para>
                 </listitem>
             </varlistentry>
            
@@ -46,7 +46,7 @@
         <title>See Also</title>
         <simplelist type="inline">
             <member>
-                <link linkend="cv_imshow_path">cv_imshow_path</link>
+                <link linkend="cv_imshow_path">cv_resize</link>
             </member>
         </simplelist>
     </refsection>
