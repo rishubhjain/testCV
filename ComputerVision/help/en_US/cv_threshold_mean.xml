@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_threshold_mean" xml:lang="en">
+<refnamediv>
+<refname>cv_threshold_mean</refname>
+ <refpurpose>To provide mean thresholding to an image</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_threshold_mean(image,threshold,Block,C)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image. It should be grayscale, It will be copy/converted to grayscale image If rgb image is given</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>threshold</term>
+<listitem>
+<para>It is the threshold value which is used to classify the pixel values. It should be Integer</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Block</term>
+<listitem>
+<para> It decides the size of neighbourhood area. It should be an odd integer and greater than 2</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>C</term>
+<listitem>
+<para> It is just a constant which is subtracted from the mean or weighted mean calculated.Must be an integer. </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Output Image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Provides Mean Thresholding</para>
+<para>Simple Thresholding uses global value as threshold value.But it may not be good in all the conditions where image has different lighting conditions in different areas. In that case, we go for adaptive thresholding.Using this threshold we get different thresholds for different regions of the same image and it gives us better results for images with varying illumination</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img_ret=cv_threshold_mean(input_image,200,101,5)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_threshold_gaussian">cv_threshold_gaussian</link>
+<link linkend="cv_threshold_binary">cv_threshold_binary</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

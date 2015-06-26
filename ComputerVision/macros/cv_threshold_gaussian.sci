@@ -1,4 +1,4 @@
-function[img_ret]=cv_threshold_gaussian(image,threshold,maxVal)
+function[img_ret]=cv_threshold_gaussian(image,threshold,block,C)
     image=converttonumpy(image)
 	[lhs,rhs]=argn(0)	
 	if (cv_check_channel(image)==3) then
@@ -10,11 +10,11 @@ function[img_ret]=cv_threshold_gaussian(image,threshold,maxVal)
 		error("this function returns an image");
 	end
 	
-	if(rhs<>3) then
+	if(rhs<>4) then
 		error("invalid number of arguments");
 	end
 	image=converttonumpy(image1)
 	
 	pyImport adaptive_threshold
-    img_ret=adaptive_threshold.adaptive_thresh_gaussian(image,threshold,maxVal)
+    img_ret=adaptive_threshold.adaptive_thresh_gaussian(image,threshold,block,C)
 endfunction

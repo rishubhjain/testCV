@@ -1,5 +1,3 @@
-# warpAffine fumction of opencv is mostly same as affine2D and affine3D of MATLAB
-
 import cv2
 import numpy as np
 import cvcheck_channel
