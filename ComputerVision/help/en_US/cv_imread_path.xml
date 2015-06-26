@@ -10,7 +10,7 @@
     </refnamediv>
     <refsynopsisdiv>
         <title>Calling Sequence</title>
-        <synopsis>cv_imread_path()</synopsis>
+        <synopsis>cv_imread_path(path,flag)</synopsis>
     </refsynopsisdiv>
 	<refsection>
         <title>Arguments</title>
@@ -19,6 +19,12 @@
                 <term>path</term>
                 <listitem>
                     <para>Path of the Image</para>
+                </listitem>
+            </varlistentry>
+			<varlistentry>
+                <term>Flag</term>
+                <listitem>
+                    <para>inptu is either 1 or 0. 1 is for rgb image and 0 for grayscale</para>
                 </listitem>
             </varlistentry>
             
@@ -34,14 +40,14 @@
     <refsection>
         <title>Description</title>
         <para>Read an image</para>
-        <para>This is an example function showing how a function will be called from scilab, It will read the image whoes path will be provided by the user and return the read image via the Ouput variable</para>
+        <para>This is an example function showing how a function will be called from scilab, It will read the image whose path will be provided by the user and return the read image via the Ouput variable</para>
         
         
     </refsection>
     <refsection>
         <title>Examples</title>
-         <programlisting role="example">image=cv_imread_path("N:\image.png")</programlisting>
-		<programlisting role="example">image=cv_imread_path("~/image.png")</programlisting>
+         <programlisting role="example">image=cv_imread_path("N:\image.png",1)</programlisting>
+		<programlisting role="example">image=cv_imread_path("~/image.png",1)</programlisting>
     </refsection>
     <refsection role="see also">
         <title>See Also</title>
