@@ -7,7 +7,7 @@
 
 <refsynopsisdiv>
  <title>Calling Sequence</title> 
-<synopsis>img_ret=cv_blur(image,kernel_type,kernel_size)
+<synopsis>img_ret=cv_blur(image,kernel_size)
 </synopsis>
  </refsynopsisdiv>
 <refsection> 
@@ -19,16 +19,11 @@
 <para>Input Image</para>
 </listitem>
 </varlistentry>
-<varlistentry>
-<term>kernel_type</term>
-<listitem>
-<para>It accepts the Integer/Float as Input  1->MORPH_RECT 2-> MORPH_ELLIPSE 3-> MORPH_CROSS</para>
-</listitem>
-</varlistentry>
+
 <varlistentry>
 <term>kernel_size</term>
 <listitem>
-<para>It requires a list specifying the size of Kernel needed example (5,5)</para>
+<para>It requires a list specifying the size of Kernel needed: example (5,5)</para>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -46,7 +41,7 @@
 <refsection>
 <title>Examples</title>
 <programlisting role="example">
-img_ret=cv_blur(input_image,1,[5,5])</programlisting>
+img_ret=cv_blur(input_image,[5,5])</programlisting>
 </refsection>
 <refsection role="see also">
 <title>See Also</title>

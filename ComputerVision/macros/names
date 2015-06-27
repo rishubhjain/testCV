@@ -4,7 +4,6 @@ cv_bilateralfilter
 cv_blackhat
 cv_blur
 cv_brief
-cv_calchist
 cv_check_channel
 cv_clahe
 cv_close
@@ -31,6 +30,7 @@ cv_rgb2gray_path
 cv_rotate
 cv_sift
 cv_size
+cv_start
 cv_surf
 cv_test
 cv_thresh_binary

@@ -1,4 +1,4 @@
-#accept kernal type and kernel size in the sci function as a parameter and then make a kernal here.
+
 
 import cv2
 import numpy as np

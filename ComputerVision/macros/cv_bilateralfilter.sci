@@ -1,4 +1,4 @@
-function[img_ret]=bilateralfilter(img, d, sigmaColor, sigmaSpace) 
+function[img_ret]=cv_bilateralfilter(image, d, sigmaColor, sigmaSpace) 
 	[lhs,rhs]=argn(0)
 	
 	if (lhs<>1) then
@@ -9,10 +9,10 @@ function[img_ret]=bilateralfilter(img, d, sigmaColor, sigmaSpace)
 		error("invalid number of input arguments");
 	end
 	
-    
+    image=converttonumpy(image)
     pyImport BilateralFilter
 	img_ret=0;
-    img_ret=BilateralFilter.bilateralFilter(img,d,sigmaColor,sigmaSpace)
+    img_ret=BilateralFilter.bilateralFilter(image,d,sigmaColor,sigmaSpace)
 	
     
     

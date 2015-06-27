@@ -7,10 +7,10 @@ def histogram2d(img,channels,mask,histsize,ranges):
     if img is None:
         print 'Error in input Image'
         return 0
-    channels = int(channels)
-  
-    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-    hist = cv2.calcHist([hsv], channels, mask, histsize, ranges )
+    #channels = int(channels)
+    print mask
+    
+    hist = cv2.calcHist(img, channels, str(mask), histsize, ranges )
         
     return hist
         

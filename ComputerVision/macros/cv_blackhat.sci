@@ -11,5 +11,5 @@ function[img_ret]=cv_blackhat(image,kernel_type,kernel_size)
 	image=converttonumpy(image)
 	img_ret=0;
 	pyImport Blackhat
-    img_ret=Blackhat.blackhat(image,kernel_type,kernel_size)
+    img_ret=Blackhat.Blackhat(image,kernel_type,kernel_size)
 endfunction

@@ -35,7 +35,7 @@ fir more details see: http://opencv-python-tutroals.readthedocs.org/en/latest/py
 <refsection>
 <title>Examples</title>
 <programlisting role="example">
-image_ret = cv_equalizehist_image(input_image)</programlisting>
+image_ret = cv_equalizehist_image(input_image);</programlisting>
 </refsection>
 <refsection role="see also">
 <title>See Also</title>

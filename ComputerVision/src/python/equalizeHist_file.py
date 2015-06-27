@@ -5,20 +5,13 @@ import numpy as np
 
 def equalizeHist_path(path):
 
-    read_origional = cv2.imread(path,0)
-    equ = cv2.equalizeHist(read_origional)
-
-    dst = np.hstack((read_origional,equ))
-    
-    return dst
+    image = cv2.imread(path,0)
+    equ = cv2.equalizeHist(image)
+    return equ
 
 
 #image should be grayscale
-def equalizeHist_image(img):
+def equalizeHist_image(image):
+    equ = cv2.equalizeHist(image)
 
-    read_origional = img
-    equ = cv2.equalizeHist(read_origional)
-
-    dst = np.hstack((read_origional,equ))
-    
-    return dst
+    return equ

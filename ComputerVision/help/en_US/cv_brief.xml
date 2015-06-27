@@ -7,7 +7,7 @@
 
 <refsynopsisdiv>
  <title>Calling Sequence</title> 
-<synopsis>kp,des=cv_brief(image,kp)
+<synopsis>kp_out,des=cv_brief(image,kp_in)
 </synopsis>
  </refsynopsisdiv>
 <refsection> 
@@ -20,13 +20,13 @@
 </listitem>
 </varlistentry>
 <varlistentry>
-<term>kp</term>
+<term>kp_in</term>
 <listitem>
 <para>Keypoints from Feature Extractor</para>
 </listitem>
 </varlistentry>
 <varlistentry>
-<term>kp</term>
+<term>kp_out</term>
 <listitem>
 <para>Output Keypoints from Brief (Feature Descriptor)</para>
 </listitem>
@@ -46,7 +46,7 @@
 <refsection>
 <title>Examples</title>
 <programlisting role="example">
-[keypoint,descriptor]=cv_brief(imput_image,keypoints_from_cv_surf)</programlisting>
+[keypoint,descriptor]=cv_brief(input_image,keypoints_from_cv_surf)</programlisting>
 </refsection>
 <refsection role="see also">
 <title>See Also</title>

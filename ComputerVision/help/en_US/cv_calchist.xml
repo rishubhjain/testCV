@@ -61,7 +61,7 @@
         </refsection>
     <refsection>
         <title>Examples</title>
-        <programlisting role="example">hist = cv_calchist(img,[0],None,[256],[0,256]))</programlisting>
+        <programlisting role="example">hist = cv_calchist(img,[0],'None',[256],[0,256])</programlisting>
 		
     </refsection>
     <refsection role="see also">

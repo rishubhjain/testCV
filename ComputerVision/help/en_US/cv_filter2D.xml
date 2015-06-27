@@ -49,14 +49,10 @@
 <title>Description</title>
 <para>Provides 2D filtering using Kernel.</para>
 <para>As in one-dimensional signals, images also can be filtered with various low-pass filters(LPF), high-pass filters(HPF) etc. LPF helps in removing noises, blurring the images etc. HPF filters helps in finding edges in the images.</para></refsection>
+
 <refsection>
 <title>Examples</title>
-<programlisting role="example">
-</programlisting>
-</refsection>
-<refsection>
-<title>Examples</title>
-<programlisting role="example">
+<programlisting role="example">image=cv_filter2D(input_image,-1,1,[5,5]);
 </programlisting>
 </refsection>
 <refsection role="see also">
