@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN" "http://java.sun.com/products/javahelp/map_1_0.dtd">
+<map version="1.0">
+<mapID target="index" url="index.html"/>
+<mapID target="section_892bc9e6304be8f6bd35050b924dc081" url="section_892bc9e6304be8f6bd35050b924dc081.html"/>
+<mapID target="cv_bilateralfilter" url="cv_bilateralfilter.html"/>
+<mapID target="cv_blackhat" url="cv_blackhat.html"/>
+<mapID target="cv_blur" url="cv_blur.html"/>
+<mapID target="cv_brief" url="cv_brief.html"/>
+<mapID target="cv_calchist" url="cv_calchist.html"/>
+<mapID target="cv_clahe" url="cv_clahe.html"/>
+<mapID target="cv_close" url="cv_close.html"/>
+<mapID target="cv_equalizehist_image" url="cv_equalizehist_image.html"/>
+<mapID target="cv_equalizehist_path" url="cv_equalizehist_path.html"/>
+<mapID target="cv_filter2D" url="cv_filter2D.html"/>
+<mapID target="cv_gaussianfilter" url="cv_gaussianfilter.html"/>
+<mapID target="cv_imread_path" url="cv_imread_path.html"/>
+<mapID target="cv_imshow_image" url="cv_imshow_image.html"/>
+<mapID target="cv_imshow_path" url="cv_imshow_path.html"/>
+<mapID target="cv_prespective_transform" url="cv_prespective_transform.html"/>
+<mapID target="cv_resize" url="cv_resize.html"/>
+<mapID target="cv_rgb2gray_image" url="cv_rgb2gray_image.html"/>
+<mapID target="cv_rgb2gray_path" url="cv_rgb2gray_path.html"/>
+<mapID target="cv_rotate" url="cv_rotate.html"/>
+<mapID target="cv_sift" url="cv_sift.html"/>
+<mapID target="cv_surf" url="cv_surf.html"/>
+<mapID target="cv_test" url="cv_test.html"/>
+<mapID target="cv_thresh_binary" url="cv_thresh_binary.html"/>
+<mapID target="cv_thresh_binary_inverse" url="cv_thresh_binary_inverse.html"/>
+<mapID target="cv_threshold_gaussian" url="cv_threshold_gaussian.html"/>
+<mapID target="cv_threshold_mean" url="cv_threshold_mean.html"/>
+<mapID target="cv_tophat" url="cv_tophat.html"/>
+<mapID target="cv_warpAffine_image" url="cv_warpAffine_image.html"/>
+<mapID target="cv_warpAffine_path" url="cv_warpAffine_path.html"/>
+</map>

@@ -1,5 +1,5 @@
 
-function[img_ret]=gaussianFilter(image, kernel_type,kernel_size, sigmaX, sigmaY) 
+function[img_ret]=cv_gaussianfilter(image, kernel_type,kernel_size, sigmaX, sigmaY) 
 	[lhs,rhs]=argn(0)
 
 	if (lhs<>1) then

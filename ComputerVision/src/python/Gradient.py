@@ -2,7 +2,7 @@
 
 import cv2
 import numpy as np
-import Kernal
+import Kernel
 
 def gradient(image,kernel_type,kernel_size):
     if image is None:
