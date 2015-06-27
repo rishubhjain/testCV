@@ -2,13 +2,6 @@
 
 function [kp,des] = cv_brief(image,kp) 
 	[lhs,rhs]=argn(0)
-	
-	pyImport cvcheck_channel
-	channel=cvcheck_channel.check_channel(image);
-	if(channel==3) then
-		error("Please input a grayscale Image")
-	end
-	
 	if (lhs<>2) then
 		error("this function returns points and descriptor");
 	end
@@ -18,7 +11,9 @@ function [kp,des] = cv_brief(image,kp)
 	end
 	image=converttonumpy(image)
     pyImport BRIEF
-    image_ret=BRIEF.brief(image,kp)
+    a=BRIEF.brief(image,kp)
+	kp=a(0);
+	des=a(1)
 	
     
     

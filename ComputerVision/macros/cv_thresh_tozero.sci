@@ -3,7 +3,7 @@ function[img_ret]=cv_thresh_tozero(image,threshold,maxVal)
 	[lhs,rhs]=argn(0)	
 	if (cv_check_channel(image)==3) then
 		warning("This function applies on only grayscale image so the image will be copy/converted to grayscale")
-		image1=cv_rgb2gray_image(image)
+		image=cv_rgb2gray_image(image)
 	end
 	
 	if (lhs<>1) then

@@ -7,13 +7,15 @@ import numpy as np
 def otsu(image):
  
     img = image
-	if img is None
-		return 0
+    if img is None
+	return 0
     
+    threshold=int(threshold)
     
-    ret, thresh = cv2.threshold(img,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+    maxVal=int(maxVal)
+    ret, thresh = cv2.threshold(img,threshold,maxVal,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
     
-    return thresh
+    return ret,thresh
 
 
     

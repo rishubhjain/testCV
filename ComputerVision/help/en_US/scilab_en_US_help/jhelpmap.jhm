@@ -25,6 +25,9 @@
 <mapID target="cv_surf" url="cv_surf.html"/>
 <mapID target="cv_test" url="cv_test.html"/>
 <mapID target="cv_thresh_binary" url="cv_thresh_binary.html"/>
+<mapID target="cv_thresh_binary_inverse" url="cv_thresh_binary_inverse.html"/>
+<mapID target="cv_threshold_gaussian" url="cv_threshold_gaussian.html"/>
+<mapID target="cv_threshold_mean" url="cv_threshold_mean.html"/>
 <mapID target="cv_tophat" url="cv_tophat.html"/>
 <mapID target="cv_warpAffine_image" url="cv_warpAffine_image.html"/>
 <mapID target="cv_warpAffine_path" url="cv_warpAffine_path.html"/>

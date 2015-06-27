@@ -7,6 +7,6 @@ def brief(image,kp):
         print 'Error in input Image'
         return 0,0
     
-    kp,des=brief.compute(img,kp)
+    kp,des=brief.compute(image,kp)
 
     return (kp,des)

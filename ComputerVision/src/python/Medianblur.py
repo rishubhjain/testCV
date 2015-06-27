@@ -3,18 +3,21 @@
 #the image depth should be CV_8U, CV_16U, or CV_32F, for larger aperture sizes, it can only be CV_8U.
 
 import cv2
+import numpy as np
+import Kernel
 
-def medianblur(img, kSize):
 
-    if img is None:
+def medianblur(image, kSize):
+
+    if image is None:
         print 'Error in input Image'
         return 0
-    #img = cv2.imread(image)
-    cv2.Laplacian(img,cv2.CV_8U)
+    
+    cv2.Laplacian(image,cv2.CV_8U)
 
-    kSize1 = int(kSize)
+    kernel=Kernel.kernel(kernel_type,kernel_size)
 
-    medBlur = cv2.medianBlur(img, kSize1)
+    medBlur = cv2.medianBlur(image, kernel)
 
     
     return medblur

@@ -25,6 +25,9 @@
 <tocitem target="cv_surf" text="cv_surf"/>
 <tocitem target="cv_test" text="cv_test"/>
 <tocitem target="cv_thresh_binary" text="cv_thresh_binary"/>
+<tocitem target="cv_thresh_binary_inverse" text="cv_thresh_binary_inverse"/>
+<tocitem target="cv_threshold_gaussian" text="cv_threshold_gaussian"/>
+<tocitem target="cv_threshold_mean" text="cv_threshold_mean"/>
 <tocitem target="cv_tophat" text="cv_tophat"/>
 <tocitem target="cv_warpAffine_image" text="cv_warpAffine_image"/>
 <tocitem target="cv_warpAffine_path" text="cv_warpAffine_path"/>

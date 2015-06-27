@@ -4,17 +4,19 @@ import cv2
 import numpy as np
 
 
-def otsu(image):
+def otsu(image,threshold,maxVal):
  
-    img = image
-    if img is None:
+    
+    if image is None:
         print 'Error in input Image'
-	return 0
+        return 0,0
+    threshold=int(threshold)
     
+    maxVal=int(maxVal)
+    ret, thresh = cv2.threshold(image,threshold,maxVal,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
     
-    ret, thresh = cv2.threshold(img,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-    
-    return thresh
+    return ret,thresh
 
 
     
+  

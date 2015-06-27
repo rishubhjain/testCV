@@ -1,4 +1,5 @@
 converttonumpy
+cv_bfmatcher
 cv_bilateralfilter
 cv_blackhat
 cv_blur
@@ -7,6 +8,8 @@ cv_calchist
 cv_check_channel
 cv_clahe
 cv_close
+cv_drawmatches
+cv_drawmatchesknn
 cv_equalizehist_image
 cv_equalizehist_path
 cv_filter2D
@@ -15,11 +18,12 @@ cv_gradient
 cv_imread_path
 cv_imshow_image
 cv_imshow_path
+cv_match2image
 cv_medianblur
 cv_numpytomatrix
 cv_numpytomatrix1
 cv_orb
-cv_otsu_binarization
+cv_otsu_thresholding
 cv_prespective_transform
 cv_resize
 cv_rgb2gray_image
@@ -30,8 +34,9 @@ cv_size
 cv_surf
 cv_test
 cv_thresh_binary
-cv_thresh_inverse
+cv_thresh_binary_inverse
 cv_thresh_tozero
+cv_thresh_tozero_inverse
 cv_thresh_truncate
 cv_threshold_gaussian
 cv_threshold_mean

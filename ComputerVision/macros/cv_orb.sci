@@ -1,27 +1,19 @@
 
-//check whether this function allows kp in float
-
-function [kp,des] = cv_orb(image,kp) 
+function [kp,des] = cv_orb(image,nfeatures,scaleFactor,color,displayimage) 
 	[lhs,rhs]=argn(0)
-
-	
-	pyImport cvcheck_channel
-	channel=cvcheck_channel.check_channel(image);
-	if(channel==3) then
-		error("Please input a grayscale Image")
-	end
-	
 	if (lhs<>2) then
 		error("this function returns an image");
 	end
 	
-	if(rhs<>2) then
+	if(rhs<>5) then
 		error("invalid number of arguments");
 	end
 	
-    
-    pyImport orb
-    [kp,des]=orb.ORB(image,kp)
+    image=converttonumpy(image)
+    pyImport Orb
+    a=Orb.ORB(image,nfeatures,scaleFactor,color,displayimage)
+	kp=a(0)
+	des=a(1)
 	if (kp==0) then
 		error("Wrong Image")
 	end

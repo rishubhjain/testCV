@@ -3,7 +3,7 @@
 import cv2
 import numpy as np
 import Kernel
-def Blur(img,kernel_type,kernel_size):
+def blur(img,kernel_type,kernel_size):
     
     if img is None:
         print 'Error in input Image'

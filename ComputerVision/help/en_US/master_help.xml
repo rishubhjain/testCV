@@ -11,7 +11,7 @@
 <!ENTITY a3306d1f86a6695a685d348eb62a1702f SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_equalizehist_image.xml">
 <!ENTITY aaab91b21b48f88219d8308cd588ba5a3 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_equalizehist_path.xml">
 <!ENTITY a70195159e9dff40acd6b8120f286d852 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_filter2D.xml">
-<!ENTITY a0a179dd6532bd1f5014171534ea4e83a SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imread.xml">
+<!ENTITY ab0a73d645ea9e3e7a659cb2a0acfd8ac SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imread_path.xml">
 <!ENTITY a216bd356f7c84fd8111f7c78883cc4f7 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_image.xml">
 <!ENTITY a24eb4e8c56cf64578e02ffc51bf4abc9 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_path.xml">
 <!ENTITY a946aeba4e7971d658d0af1f0cfc7cf59 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_prespective_transform.xml">
@@ -23,6 +23,9 @@
 <!ENTITY ac3f1a803554e6f783e34d13368729f2d SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_surf.xml">
 <!ENTITY a4262ca707902249e0a36674f0f85a183 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_test.xml">
 <!ENTITY af0c5ffa4628e6ac6bfba3d2574516993 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_thresh_binary.xml">
+<!ENTITY a87db52f6de6978578be069282e3b486f SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_thresh_binary_inverse.xml">
+<!ENTITY a9e21eb263358c7ec91f449141eba8ed5 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_threshold_gaussian.xml">
+<!ENTITY a1273ba31e02421a491c7eb2f721c250f SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_threshold_mean.xml">
 <!ENTITY a81359713e2b4b823335a20b61d1ecc32 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_tophat.xml">
 <!ENTITY a6c7427e40c1428328f8b1966861c1172 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_warpAffine_image.xml">
 <!ENTITY af24c8fa7b6d30e0d458f124536b1f6a0 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_warpAffine_path.xml">
@@ -52,7 +55,7 @@
 &a3306d1f86a6695a685d348eb62a1702f;
 &aaab91b21b48f88219d8308cd588ba5a3;
 &a70195159e9dff40acd6b8120f286d852;
-&a0a179dd6532bd1f5014171534ea4e83a;
+&ab0a73d645ea9e3e7a659cb2a0acfd8ac;
 &a216bd356f7c84fd8111f7c78883cc4f7;
 &a24eb4e8c56cf64578e02ffc51bf4abc9;
 &a946aeba4e7971d658d0af1f0cfc7cf59;
@@ -64,6 +67,9 @@
 &ac3f1a803554e6f783e34d13368729f2d;
 &a4262ca707902249e0a36674f0f85a183;
 &af0c5ffa4628e6ac6bfba3d2574516993;
+&a87db52f6de6978578be069282e3b486f;
+&a9e21eb263358c7ec91f449141eba8ed5;
+&a1273ba31e02421a491c7eb2f721c250f;
 &a81359713e2b4b823335a20b61d1ecc32;
 &a6c7427e40c1428328f8b1966861c1172;
 &af24c8fa7b6d30e0d458f124536b1f6a0;

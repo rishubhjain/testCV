@@ -12,7 +12,7 @@ function[img_ret]=cv_blur(image,kernel_type,kernel_size)
 	image=converttonumpy(image)
     img_ret=0
     pyImport Blur
-    img_ret=Blur.blur(image,kernel_type,kernel_size)    
+    img_ret=Blur.Blur(image,kernel_type,kernel_size)    
     
 endfunction 
 
