@@ -16,7 +16,8 @@
 <varlistentry>
 <term>image</term>
 <listitem>
-<para>Input Image. It should be grayscale, It will be copy/converted to grayscale image If rgb image is given</para>
+<para>Input Image.</para>
+<warning> It should be grayscale, It will be copy/converted to grayscale image If rgb image is given</warning>
 </listitem>
 </varlistentry>
 <varlistentry>

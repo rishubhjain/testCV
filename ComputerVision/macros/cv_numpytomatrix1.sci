@@ -11,6 +11,7 @@ function[M]=cv_numpytomatrix1(image)
 		pyImport Matrix1
 		M=Matrix1.matrix_2d(image)
 	end
+	
 	mat1=0
 	//mat2=0
 	//mat3=0

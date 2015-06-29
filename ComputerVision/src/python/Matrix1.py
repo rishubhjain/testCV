@@ -7,7 +7,7 @@ def matrix_3d(image,flag):
     if image is None:
         print 'please check the Image'
         return 0
-    mat0=np.asmatrix(image[flag-1])
+    mat0=image[flag-1][:][:]
     #mat1=np.asmatrix(image1[1])
     #mat2=np.asmatrix(image1[2])
     #if flag==1:
