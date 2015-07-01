@@ -1,4 +1,4 @@
-function [image_ret] = cv_circle(image,center,radius,color,linetype,thickness) 
+function [image_ret] = cv_circle(image,center,radius,colour,linetype,thickness) 
 	[lhs,rhs]=argn(0)
 	if (lhs<>1) then
 		error("this function returns an image");
@@ -10,6 +10,6 @@ function [image_ret] = cv_circle(image,center,radius,color,linetype,thickness)
 	
 	image=converttonumpy(image)
     pyImport Circle
-    image_ret=Circle.circle(image,center,radius,color,linetype,thickness)
+    image_ret=Circle.circle(image,center,radius,colour,linetype,thickness)
 
 endfunction 

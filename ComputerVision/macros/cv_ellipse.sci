@@ -1,4 +1,4 @@
-function [image_ret] = cv_ellipse(image,center, axes, angle, startAngle, endAngle,color,thickness,lineType) 
+function [image_ret] = cv_ellipse(image,center, axes, angle, startAngle, endAngle,colour,thickness,lineType) 
 	[lhs,rhs]=argn(0)
 	
 	
@@ -12,6 +12,6 @@ function [image_ret] = cv_ellipse(image,center, axes, angle, startAngle, endAngl
 	
     image=converttonumpy(image)
     pyImport Ellipse
-    image_ret=Ellipse.ellipse(image,center, axes, angle, startAngle, endAngle,color,thickness,lineType)
+    image_ret=Ellipse.ellipse(image,center, axes, angle, startAngle, endAngle,colour,thickness,lineType)
 
 endfunction 

@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import Point
 
-def myLine(img,start,end,color,linetype,thickness):
+def line(img,start,end,color,linetype,thickness):
     thickness=int(thickness)
     
         

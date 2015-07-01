@@ -1,4 +1,4 @@
-function [image_ret] = cv_retangle(image,start,end,color,linetype,thickness) 
+function [image_ret] = cv_retangle(image,start,end,colour,linetype,thickness) 
 	[lhs,rhs]=argn(0)
 	
 	
@@ -12,6 +12,6 @@ function [image_ret] = cv_retangle(image,start,end,color,linetype,thickness)
 	
     image=converttonumpy(image)
     pyImport Rect
-    image_ret=Rect.rect(image,start,end,color,linetype,thickness)
+    image_ret=Rect.rect(image,start,end,colour,linetype,thickness)
 
 endfunction 

@@ -14,7 +14,7 @@ function[img_ret]=cv_thresh_binary(image,threshold,maxVal)
 	if(rhs<>3) then
 		error("invalid number of arguments");
 	end
-	image=converttonumpy(image1)
+	image=converttonumpy(image)
 	//disp(typeof(image))
 	//disp(type(image))
     pyImport Thresh_binary

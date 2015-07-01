@@ -1,4 +1,4 @@
-function [image_ret] = cv_line(image,start,end,color,linetype,thickness) 
+function [image_ret] = cv_line(image,start,end,colour,linetype,thickness) 
 	[lhs,rhs]=argn(0)
 	
 	
@@ -12,6 +12,6 @@ function [image_ret] = cv_line(image,start,end,color,linetype,thickness)
 	
     image=converttonumpy(image)
     pyImport Line
-    image_ret=Line.myline(image,start,end,color,linetype,thickness)
+    image_ret=Line.line(image,start,end,colour,linetype,thickness)
 
 endfunction 
