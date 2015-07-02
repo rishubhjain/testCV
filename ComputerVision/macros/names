@@ -25,6 +25,7 @@ cv_match2image
 cv_medianblur
 cv_numpytomatrix
 cv_numpytomatrix1
+cv_ones
 cv_orb
 cv_otsu_thresholding
 cv_point
@@ -49,4 +50,5 @@ cv_threshold_mean
 cv_tophat
 cv_warpAffine_image
 cv_wrapAffine_path
+cv_zeros
 input_arguments
