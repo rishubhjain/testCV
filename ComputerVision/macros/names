@@ -27,6 +27,7 @@ cv_numpytomatrix
 cv_numpytomatrix1
 cv_orb
 cv_otsu_thresholding
+cv_point
 cv_prespective_transform
 cv_rect
 cv_resize

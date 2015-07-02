@@ -31,7 +31,7 @@ def findcontours(image,mode,method):
         print "Please select correct method"
 
     print image
-    print image.shape
+    print len(image.shape)
     #im, contours = cv2.findContours(image,cvmode,cvmethod)
     im, contours = cv2.findContours(image,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
     print image
