@@ -4,6 +4,7 @@ cv_bilateralfilter
 cv_blackhat
 cv_blur
 cv_brief
+cv_cannyedge
 cv_check_channel
 cv_circle
 cv_clahe
@@ -16,10 +17,12 @@ cv_equalizehist_path
 cv_filter2D
 cv_findcontour
 cv_gaussianfilter
+cv_grabcut
 cv_gradient
 cv_imread_path
 cv_imshow_image
 cv_imshow_path
+cv_laplace
 cv_line
 cv_match2image
 cv_medianblur
@@ -37,6 +40,7 @@ cv_rgb2gray_path
 cv_rotate
 cv_sift
 cv_size
+cv_sobel
 cv_start
 cv_surf
 cv_test
