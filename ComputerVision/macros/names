@@ -16,6 +16,7 @@ cv_equalizehist_image
 cv_equalizehist_path
 cv_filter2D
 cv_findcontour
+cv_gaussian_pyramid
 cv_gaussianfilter
 cv_grabcut
 cv_gradient
@@ -33,6 +34,10 @@ cv_orb
 cv_otsu_thresholding
 cv_point
 cv_prespective_transform
+cv_pyrDown_path
+cv_pyrUp_path
+cv_pyrdown
+cv_pyrup
 cv_rect
 cv_resize
 cv_rgb2gray_image
