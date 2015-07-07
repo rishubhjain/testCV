@@ -26,6 +26,7 @@ cv_imshow_path
 cv_laplace
 cv_line
 cv_match2image
+cv_match_template
 cv_medianblur
 cv_numpytomatrix
 cv_numpytomatrix1
