@@ -9,11 +9,14 @@ cv_check_channel
 cv_circle
 cv_clahe
 cv_close
+cv_displaykeypoint
+cv_drawkeypoints
 cv_drawmatches
 cv_drawmatchesknn
 cv_ellipse
 cv_equalizehist_image
 cv_equalizehist_path
+cv_fast
 cv_filter2D
 cv_findcontour
 cv_gaussian_pyramid
