@@ -4,11 +4,9 @@ import cv2.cv as cv
 import cv2
 import numpy as np
 
-def cornerHarris_image(image,blocksize,ksize,k):
+def cornerharris(image,blocksize,ksize,k):
 
-   
-    gray = cv2.cvtColor(origional_image,cv2.cv.CV_BGR2GRAY,image)
-    gray1 = np.float32(gray)
+    gray1 = np.float32(image)
     blocksize=int(blocksize)
     ksize=int(ksize)
 
