@@ -1,7 +1,6 @@
 import numpy as np
 import cv2
 
-
 def flann_match(des1,des2,num_trees,num_checks,k):
     num_trees=int(num_trees)
     num_checks=int(num_checks)
@@ -12,6 +11,6 @@ def flann_match(des1,des2,num_trees,num_checks,k):
     
     flann = cv2.FlannBasedMatcher(index_params, search_params)
 
-    matches = flann.knnMatch(des1,des2,k)
+    matches = flann(des1,des2,k)
 
     return matches

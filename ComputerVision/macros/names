@@ -9,6 +9,7 @@ cv_check_channel
 cv_circle
 cv_clahe
 cv_close
+cv_cornerharris
 cv_displaykeypoint
 cv_drawkeypoints
 cv_drawmatches
@@ -19,6 +20,7 @@ cv_equalizehist_path
 cv_fast
 cv_filter2D
 cv_findcontour
+cv_flannmatch
 cv_gaussian_pyramid
 cv_gaussianfilter
 cv_grabcut
@@ -47,6 +49,7 @@ cv_resize
 cv_rgb2gray_image
 cv_rgb2gray_path
 cv_rotate
+cv_shi_cornerdetection
 cv_sift
 cv_size
 cv_sobel

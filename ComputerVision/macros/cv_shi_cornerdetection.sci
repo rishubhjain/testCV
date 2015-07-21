@@ -1,5 +1,5 @@
 
-function[img_ret]=cv_thresh_binary(image,threshold,maxVal)
+function[corners]=cv_shi_cornerdetection(image, maxCorners, qualityLevel, minDistance)
 	image=converttonumpy(image)
 	[lhs,rhs]=argn(0)	
 	if (cv_check_channel(image)==3) then
@@ -8,14 +8,14 @@ function[img_ret]=cv_thresh_binary(image,threshold,maxVal)
 	end
 	
 	if (lhs<>1) then
-		error("this function returns an image");
+		error("this function returns corners");
 	end
 	
-	if(rhs<>3) then
+	if(rhs<>4) then
 		error("invalid number of arguments");
 	end
 	image=converttonumpy(image)
 
-    pyImport Thresh_binary
-    img_ret=Thresh_binary.thresh_binary(image,threshold,maxVal)
+    pyImport shi_cornerdetection
+    corners=shi_cornerdetection.goodFeaturesToTrack(image, maxCorners, qualityLevel, minDistance)
 endfunction
