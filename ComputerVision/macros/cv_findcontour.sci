@@ -1,9 +1,14 @@
 function [contours,image_ret] = cv_findcontour(image,mode,method) 
 	
-	[lhs,rhs]=argn(0)
+	image=converttonumpy(image)
+	[lhs,rhs]=argn(0)	
+	if (cv_check_channel(image)==3) then
+		warning("This function applies on only grayscale image so the image will be copy/converted to grayscale")
+		image=cv_rgb2gray_image(image)
+	end
 	
 	if (lhs<>2) then
-		error("this function returns an image");
+		error("this function returns contours and image");
 	end
 	
 	if(rhs<>3) then
@@ -12,10 +17,10 @@ function [contours,image_ret] = cv_findcontour(image,mode,method)
 	contours=0
 	image_ret=0
     image=converttonumpy(image)
-	disp(typeof(image))
+	
     pyImport Findcontours
-    Findcontours.findcontours(image,mode,method)
-	//contours=ret_val(0)
-	//image_ret=ret_val(1)
+    ret_val=Findcontours.findcontours(image,mode,method)
+	contours=ret_val(0)
+	image_ret=ret_val(1)
 	
 endfunction 

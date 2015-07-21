@@ -30,11 +30,13 @@ def findcontours(image,mode,method):
     else:
         print "Please select correct method"
 
-    print image
+    print type(image)
+    image=np.array(image)
     print len(image.shape)
-    #im, contours = cv2.findContours(image,cvmode,cvmethod)
-    im, contours = cv2.findContours(image,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
-    print image
+    image=np.int0(corners)
+    im, contours = cv2.findContours(image,cvmode,cvmethod)
+    #im, contours = cv2.findContours(image,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
+    print im
     print image.shape
 
-    return 
+    return im,contours 

@@ -7,3 +7,4 @@ def goodFeaturesToTrack(image, maxCorners, qualityLevel, minDistance):
     corners = cv2.goodFeaturesToTrack(image,maxCorners,qualityLevel,minDistance)
     corners = np.int0(corners)
     return corners
+    
