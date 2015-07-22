@@ -6,8 +6,9 @@ import Point
 
 def findcontours(image,mode,method):
     mode=int(mode)
+    
     method=int(method)
-    print type(image)
+    
     if mode==1:
         cvmode= cv2.RETR_EXTERNAL
     elif mode==2:
@@ -30,13 +31,7 @@ def findcontours(image,mode,method):
     else:
         print "Please select correct method"
 
-    print type(image)
-    image=np.array(image)
-    print len(image.shape)
-    image=np.int0(corners)
-    im, contours = cv2.findContours(image,cvmode,cvmethod)
-    #im, contours = cv2.findContours(image,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
-    print im
-    print image.shape
-
-    return im,contours 
+    
+    contours,hierarchy  = cv2.findContours(image.copy(),cvmode,cvmethod)
+    
+    return contours,hierarchy 

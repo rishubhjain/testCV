@@ -1,4 +1,4 @@
-function [contours,image_ret] = cv_findcontour(image,mode,method) 
+function [contours1,hierarchy ] = cv_findcontour(image,mode,method) 
 	
 	image=converttonumpy(image)
 	[lhs,rhs]=argn(0)	
@@ -8,7 +8,7 @@ function [contours,image_ret] = cv_findcontour(image,mode,method)
 	end
 	
 	if (lhs<>2) then
-		error("this function returns contours and image");
+		error("this function returns contours and hierarchy ");
 	end
 	
 	if(rhs<>3) then
@@ -20,7 +20,7 @@ function [contours,image_ret] = cv_findcontour(image,mode,method)
 	
     pyImport Findcontours
     ret_val=Findcontours.findcontours(image,mode,method)
-	contours=ret_val(0)
-	image_ret=ret_val(1)
+	contours1=ret_val(0)
+	hierarchy =ret_val(1)
 	
 endfunction 
