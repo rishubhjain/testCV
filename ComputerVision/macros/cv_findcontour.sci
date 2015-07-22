@@ -1,4 +1,4 @@
-function [contours1,hierarchy ] = cv_findcontour(image,mode,method) 
+function [contours1,hierarchy] = cv_findcontour(image,mode,method) 
 	
 	image=converttonumpy(image)
 	[lhs,rhs]=argn(0)	
