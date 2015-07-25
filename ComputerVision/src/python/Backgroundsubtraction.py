@@ -8,7 +8,7 @@ def BackgroundSubtractorMOG(video):
 
     capture = cv2.VideoCapture(video)
 
-    fgbg = cv2.BackgroundSubtractorMOG()
+    fgbg = cv2.BackgroundSubtractorMOG2()
 
     while(1):
         ret, frame = capture.read()
