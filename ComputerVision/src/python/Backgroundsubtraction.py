@@ -1,5 +1,6 @@
 #BackgroundSubtractorMOG
-#As an argument pass video
+#As an argument pass video path
+3
 
 import cv2
 import numpy as np
