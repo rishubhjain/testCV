@@ -21,6 +21,7 @@ cv_fast
 cv_filter2D
 cv_findcontour
 cv_flannmatch
+cv_frame
 cv_gaussian_pyramid
 cv_gaussianfilter
 cv_grabcut
