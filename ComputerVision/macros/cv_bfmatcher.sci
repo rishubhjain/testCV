@@ -1,4 +1,5 @@
 function[matches]=cv_bfmatcher(des1,des2)
+	
 	if (lhs<>1) then
 		error("this function returns matches");
 	end
@@ -6,8 +7,13 @@ function[matches]=cv_bfmatcher(des1,des2)
 	if(rhs<>2) then
 		error("invalid number of arguments");
 	end
-	pyImport Bfmatcher
-	des1=pyNpWrap(des1)
-	des2=pyNpWrap(des2)
-	matches=Bfmatcher.BFMatcher(des1,des2)
+	if checktype(des1)==2 & checktype(des2)==2 then
+		
+		pyImport Bfmatcher
+		des1=pyNpWrap(des1)
+		des2=pyNpWrap(des2)
+		matches=Bfmatcher.BFMatcher(des1,des2)
+	end
+	else 
+		error("The parameter should be numpy ndarray array")
 endfunction	

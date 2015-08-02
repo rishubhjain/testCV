@@ -1,4 +1,5 @@
 checkimage
+checktype
 converttonumpy
 cv_bfmatcher
 cv_bilateralfilter
