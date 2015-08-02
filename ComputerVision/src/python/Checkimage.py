@@ -1,7 +1,7 @@
 import numpy as np
 
 def checkimage(image):
-  
+              
     if isinstance(image,np.ndarray):
         
         try:
