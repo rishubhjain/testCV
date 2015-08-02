@@ -1,9 +1,11 @@
+checkimage
 converttonumpy
 cv_bfmatcher
 cv_bilateralfilter
 cv_blackhat
 cv_blur
 cv_brief
+cv_camshift
 cv_cannyedge
 cv_check_channel
 cv_circle
@@ -33,6 +35,7 @@ cv_laplace
 cv_line
 cv_match2image
 cv_match_template
+cv_meanshift
 cv_medianblur
 cv_numpytomatrix
 cv_numpytomatrix1
