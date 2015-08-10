@@ -12,11 +12,11 @@ function [image_ret] = cv_cornerharris(image,blocksize,ksize,k)
 		error(msprintf(gettext("%s: Wrong type for argument %d: Image expected.\n"), "cv_cornerharris", 1));
 	end
 	
-	checkconstant(blocksize,"cv_cornerharris",2)
+	checkconstant(blocksize,"cv_cornerharris",2);
 	
-	checkconstant(ksize,"cv_cornerharris",3)
+	checkconstant(ksize,"cv_cornerharris",3);
 	
-	checkconstant(k,"cv_cornerharris",4)
+	checkconstant(k,"cv_cornerharris",4);
 	
 	image=converttonumpy(image)
     pyImport cornerHarris
