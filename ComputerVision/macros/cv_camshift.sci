@@ -14,7 +14,7 @@ function[ image_ret]=cv_camshift(video_path,r,h,c,w,mask,roi_hist)
 	
 	if typeof(video_path)<>'string' then
 	
-		error(msprintf(gettext("%s: Wrong type for argument %d: String expected.\n"), "cv_camshift", 1);
+		error(msprintf(gettext("%s: Wrong type for argument %d: String expected.\n"), "cv_camshift", 1));
 		
 	end
 	

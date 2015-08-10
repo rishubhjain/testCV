@@ -9,7 +9,7 @@ function [img_ret]=cv_drawkeypoints(image,keypoints,color)
 		error(msprintf(gettext("%s: Wrong number of input arguments: %d  expected.\n"), "cv_drawkeypoints", 3));
 	end
 	
-	checkconstant(color,cv_drawkeypoints,3);
+	checkconstant(color,"cv_drawkeypoints",3);
 	
 	if checktype(keypoints)<>1 then
 		error(msprintf(gettext("%s: Wrong type for argument %d: Keypoint expected.\n"), "cv_drawkeypoints", 2));
