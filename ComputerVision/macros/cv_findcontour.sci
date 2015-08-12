@@ -6,8 +6,18 @@ function [contours1,hierarchy] = cv_findcontour(image,mode,method)
 	end
 	
 	if(rhs<>3) then
-		error("invalid number of arguments");
+		error(msprintf(gettext("%s: Wrong number of input arguments: %d  expected.\n"), "cv_findcontour", 3 ));
 	end
+	
+	if checkimage(image)==0 then
+		error(msprintf(gettext("%s: Wrong type for argument %d: Image expected.\n"), "cv_findcontour", 1));
+	end
+	
+	checkconstant(mode,"cv_findcontour",2);
+	
+	checkconstant(method,"cv_findcontour",3);
+	
+	
 	image=converttonumpy(image)
 	if (cv_check_channel(image)==3) then
 		warning("This function applies on only grayscale image so the image will be copy/converted to grayscale")

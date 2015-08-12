@@ -10,10 +10,13 @@ function [image_ret] = cv_clahe(image,clipLimit, titleGridSize)
 		error(msprintf(gettext("%s: Wrong number of input arguments: %d  expected.\n"), "cv_clahe", 3));
 	end
 	
-	checkconstant(color,"cv_clahe",2);
+	checkconstant(clipLimit,"cv_clahe",2);
 	
-	checkconstant(color,"cv_clahe",3);
+	checkconstant(titleGridSize,"cv_clahe",3);
 	
+	if checkimage(image)==0 then
+		error(msprintf(gettext("%s: Wrong type for argument %d: Image expected.\n"), "cv_clahe", 1));
+	end
 	
 	image=converttonumpy(image)
 	
