@@ -1,19 +1,20 @@
 function [contours1,hierarchy] = cv_findcontour(image,mode,method) 
-	
-	image=converttonumpy(image)
-	[lhs,rhs]=argn(0)	
-	if (cv_check_channel(image)==3) then
-		warning("This function applies on only grayscale image so the image will be copy/converted to grayscale")
-		image=cv_rgb2gray_image(image)
-	end
-	
+	[lhs,rhs]=argn(0)
+		
 	if (lhs<>2) then
-		error("this function returns contours and hierarchy ");
+		error(msprintf(gettext("%s: Wrong number of output arguments: %d  expected.\n"), "cv_findcontour", 2 ));
 	end
 	
 	if(rhs<>3) then
 		error("invalid number of arguments");
 	end
+	image=converttonumpy(image)
+	if (cv_check_channel(image)==3) then
+		warning("This function applies on only grayscale image so the image will be copy/converted to grayscale")
+		image=cv_rgb2gray_image(image)
+	end
+	
+	
 	contours=0
 	image_ret=0
     image=converttonumpy(image)
