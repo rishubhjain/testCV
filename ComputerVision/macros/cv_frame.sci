@@ -3,12 +3,17 @@ function[ret,frame] = cv_frame(video_path)
 	[lhs,rhs]=argn(0)	
 
 	if (lhs<>2) then
-		error("this function returns ret and frame ");
+		error(msprintf(gettext("%s: Wrong number of output arguments: %d  expected.\n"), "cv_frame", 2));
 	end
 	
 	if(rhs<>1) then
-		error("invalid number of arguments");
+		error(msprintf(gettext("%s: Wrong number of input arguments: %d  expected.\n"), "cv_frame", 1 ));
 	end
+	
+	//if (typeof(video_path)<>'string')  then
+	//	error(msprintf(gettext("%s: Wrong type for argument %d: String expected.\n"), "cv_frame", 1));
+	//end
+	
 	
 	if video_path==0 then
 		pyImport Frame
