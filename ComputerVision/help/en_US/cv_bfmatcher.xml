@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_bfmatcher" xml:lang="en">
+<refnamediv>
+<refname>cv_bfmatcher</refname>
+ <refpurpose>To match descriptors</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>matches=cv_bfmatcher(des1,des1)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>des1</term>
+<listitem>
+<para>Descriptors of an image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>des1</term>
+<listitem>
+<para>Descriptors of another Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>matches</term>
+<listitem>
+<para>matches  is a list of DMatch objects.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Match Descriptors</para>
+<para>bf_matcher is used to match descriptors from 2 differnt images, It return DMatch object which has properties like distance to know good matches and bad matches</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+matches=cv_bfmatcher(des1,des2)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_brief">cv_brief</link>
+<link linkend="cv_drawmatches">cv_drawmatches</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

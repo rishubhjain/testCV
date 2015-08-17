@@ -3,6 +3,7 @@
 <map version="1.0">
 <mapID target="index" url="index.html"/>
 <mapID target="section_892bc9e6304be8f6bd35050b924dc081" url="section_892bc9e6304be8f6bd35050b924dc081.html"/>
+<mapID target="cv_bfmatcher" url="cv_bfmatcher.html"/>
 <mapID target="cv_bilateralfilter" url="cv_bilateralfilter.html"/>
 <mapID target="cv_blackhat" url="cv_blackhat.html"/>
 <mapID target="cv_blur" url="cv_blur.html"/>

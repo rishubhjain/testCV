@@ -3,6 +3,7 @@
 <toc version="1.0">
 <tocitem target="index" text="ComputerVision">
 <tocitem target="section_892bc9e6304be8f6bd35050b924dc081" text="ComputerVision">
+<tocitem target="cv_bfmatcher" text="cv_bfmatcher"/>
 <tocitem target="cv_bilateralfilter" text="cv_bilateralfilter"/>
 <tocitem target="cv_blackhat" text="cv_blackhat"/>
 <tocitem target="cv_blur" text="cv_blur"/>

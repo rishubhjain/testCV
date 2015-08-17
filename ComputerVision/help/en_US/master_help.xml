@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book [
 <!--Begin Entities-->
+<!ENTITY a7297eb56adb8d531e9faf3c1424a13be SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_bfmatcher.xml">
 <!ENTITY aca0e261c32f00c80207d285b0cf05cdc SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_bilateralfilter.xml">
 <!ENTITY aa794f15227c700eb83309688d86fcadc SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_blackhat.xml">
 <!ENTITY a2c1627286e26ef18698ef9ba63ab23d9 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_blur.xml">
@@ -46,6 +47,7 @@
 
 <part xml:id='section_892bc9e6304be8f6bd35050b924dc081'>
 <title>ComputerVision</title>
+&a7297eb56adb8d531e9faf3c1424a13be;
 &aca0e261c32f00c80207d285b0cf05cdc;
 &aa794f15227c700eb83309688d86fcadc;
 &a2c1627286e26ef18698ef9ba63ab23d9;
