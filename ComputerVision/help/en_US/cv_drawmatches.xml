@@ -2,9 +2,71 @@
 <refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_drawmatches" xml:lang="en">
 <refnamediv>
 <refname>cv_drawmatches</refname>
- <refpurpose>To draw Matches with respect to keypoints</refpurpose>
+ <refpurpose>To draw good matches with respect to keypoints</refpurpose>
  </refnamediv>
 
 <refsynopsisdiv>
  <title>Calling Sequence</title> 
-<synopsis>image=cv_drawmatches(
+<synopsis>image_ret=cv_drawmatches(image1,kp1,image2,kp2,matches)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image1</term>
+<listitem>
+<para>First image: Must be np.ndarray</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kp1</term>
+<listitem>
+<para>Keypoints with respect to first Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>image2</term>
+<listitem>
+<para>second image: Must be np.ndarray</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kp2</term>
+<listitem>
+<para>Keypoints with respect to first Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>matches</term>
+<listitem>
+<para>Array of good Matches that is to be drawn : example matches[:100] -> top hundred matches </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>image_ret</term>
+<listitem>
+<para>Returned Image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>To draw good matches</para>
+<para>This function is used to match the keypoints of one image to keypoints of another image</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+image=cv_drawmatches(image1, kp1, image2, kp2, matches) </programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_displaykeypoint">cv_displaykeypoint</link>
+<link linkend="cv_surf">cv_surf</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>
