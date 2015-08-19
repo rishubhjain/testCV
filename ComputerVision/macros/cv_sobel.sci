@@ -1,4 +1,4 @@
-function[image]=cv_sobel(img, ddepth, xorder, yorder, ksize,mode)
+function[image]=cv_sobel(img, xorder, yorder, ksize,mode)
 	[lhs,rhs]=argn(0)	
 	
 	if (lhs<>1) then
