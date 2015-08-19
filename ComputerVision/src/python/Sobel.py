@@ -3,7 +3,7 @@ import numpy as np
 import Kernel
 
 
-def sobel(img, ddepth, xorder, yorder, ksize,mode):
+def sobel(img, xorder, yorder, ksize,mode):
     xorder = int(xorder)
     yorder = int(yorder)
     ksize = int(ksize)
