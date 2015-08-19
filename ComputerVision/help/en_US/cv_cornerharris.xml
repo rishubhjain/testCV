@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_cornerharris" xml:lang="en">
+<refnamediv>
+<refname>cv_cornerharris</refname>
+ <refpurpose>Detects Corner</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>image_ret=cv_cornerharris(image,blocksize,ksize,k)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input image, it should be grayscale and float32 type.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>blocksize</term>
+<listitem>
+<para>It is the size of neighbourhood considered for corner detection</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>ksize</term>
+<listitem>
+<para>Aperture parameter of Sobel derivative used.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>k</term>
+<listitem>
+<para>Harris detector free parameter in the equation.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>image_ret</term>
+<listitem>
+<para>Returned Image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Corner/Edge Detection</para>
+<para>Corner Harris detects the corners in an image and returns the image .</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img = cv_cornerharris(input_image,2,3,0.04)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_close">cv_close</link>
+<link linkend="cv_blur">cv_blur</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

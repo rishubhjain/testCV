@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_cannyedge" xml:lang="en">
+<refnamediv>
+<refname>cv_cannyedge</refname>
+ <refpurpose>Detecting Edges</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>image=cv_cannyedge(input_image,thresh1,thresh2)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>input_image</term>
+<listitem>
+<para>Input Image must be an np.darray</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>thresh1</term>
+<listitem>
+<para>minimum value of threshold, must be an integer</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>thresh2</term>
+<listitem>
+<para>maximum value of threshold, must be an integer</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Output Image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>To Detect edges</para>
+<para>It is an efficient way of detecting . Hysteresis Thresholding decides which are all edges are really edges and which are not. For this, we need two threshold values, minimum threshold and max threshold.</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img = cv_cannyedge(input_image,100,200)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_brief">cv_brief</link>
+<link linkend="cv_blur">cv_blur</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

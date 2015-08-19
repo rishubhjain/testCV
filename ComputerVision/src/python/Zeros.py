@@ -1,4 +1,3 @@
-import numpy as np
 
 def zeros(rows,cols,type1):
     rows=int(rows)
