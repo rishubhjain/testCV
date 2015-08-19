@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_circle" xml:lang="en">
+<refnamediv>
+<refname>cv_circle</refname>
+ <refpurpose>Draw Circle</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>imge_ret=cv_circle(image,center,radius,colour,linetype,thickness)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>center</term>
+<listitem>
+<para>Center Point of image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>radius</term>
+<listitem>
+<para>Radius of circle -> int</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>colour</term>
+<listitem>
+<para>Colour of the Circle ex: [255,255,0]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>linetype</term>
+<listitem>
+<para>Type of line 8 or 4</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>thickness</term>
+<listitem>
+<para>Thickness of line</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>imge_ret</term>
+<listitem>
+<para>Return Image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>To draw Circle</para>
+<para>This function is Used to draw the corcle. </para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+img=cv_circle(input_image,[2,2],10,[10,255,255],4,2)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_line">cv_line</link>
+<link linkend="cv_rotate">cv_rotate</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>
