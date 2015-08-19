@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_thresh_tozero_inverse" xml:lang="en">
+<refnamediv>
+<refname>cv_thresh_tozero_inverse</refname>
+ <refpurpose>"It provides the functionality of ToZero Inverse Thresholding"</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>"img_ret"=cv_thresh_tozero_inverse("image","threshold","maxVal")
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>"image"</term>
+<listitem>
+<para>"Input image"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"threshold"</term>
+<listitem>
+<para>"It is the threshold value which is used to classify the pixel values. It should be Integer"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"maxVal"</term>
+<listitem>
+<para>"It represents the value to be given if pixel value is more than (sometimes less than) the threshold value.It should be integer"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"img_ret"</term>
+<listitem>
+<para>"Output image"</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>"ToZero Inverse Thresholding"</para>
+<para>"It represents the value to be given if pixel value is less than the threshold value.It should be integer"</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+"img_ret=cv_thresh_tozero_inverse(input_image,127,255);"</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_thresh_binary">cv_thresh_binary</link>
+<link linkend="cv_thresh_truncate">cv_thresh_truncate</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

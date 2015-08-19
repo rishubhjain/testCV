@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_sobel" xml:lang="en">
+<refnamediv>
+<refname>cv_sobel</refname>
+ <refpurpose>"Calculates the first, second, third or mixed image derivatives using an extended Sobel operator"</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>"image"=cv_sobel("img","ddepth","xorder","yorder","ksize","mode")
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>"img"</term>
+<listitem>
+<para>"Input image"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"ddepth"</term>
+<listitem>
+<para>"Output image Depth. when ddepth=-1, the destination image will have the same depth as the source; in the case of 8-bit input images it will result in truncated derivatives."</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"xorder"</term>
+<listitem>
+<para>"order of the derivative x"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"yorder"</term>
+<listitem>
+<para>"order of the derivative y"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"ksize"</term>
+<listitem>
+<para>"size of the extended Sobel kernel; it must be 1, 3, 5, or 7"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"mode"</term>
+<listitem>
+<para>"It is used to set output image depth. If it is 1 then output image depth is cv2.CV_16S else if it is 2 then its cv2.CV_64F"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"image"</term>
+<listitem>
+<para>"Output image"</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>"Sobel"</para>
+<para>"Calculates the first, second, third, or mixed image derivatives using an extended Sobel operator that convolves the image with the appropriate kernel."</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+"[image]=cv_sobel(input_image, 1, 0, 3,1);"</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_zeros">cv_zeros</link>
+<link linkend="cv_thresh_tozero_inverse">cv_thresh_tozero_inverse</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>
