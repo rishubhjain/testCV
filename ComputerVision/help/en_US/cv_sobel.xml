@@ -20,12 +20,6 @@
 </listitem>
 </varlistentry>
 <varlistentry>
-<term>"ddepth"</term>
-<listitem>
-<para>"Output image Depth. when ddepth=-1, the destination image will have the same depth as the source; in the case of 8-bit input images it will result in truncated derivatives."</para>
-</listitem>
-</varlistentry>
-<varlistentry>
 <term>"xorder"</term>
 <listitem>
 <para>"order of the derivative x"</para>
