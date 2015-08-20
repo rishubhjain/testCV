@@ -16,6 +16,7 @@
 <!ENTITY ac0ac4e5ca9ebf98f12e1cb795a947223 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_displaykeypoint.xml">
 <!ENTITY a282cedfce079f4ebbeb6fd2afa7eeb6b SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_drawkwypoints.xml">
 <!ENTITY a32f5c83f6272b3362c3b3678c1b3c30c SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_drawmatches.xml">
+<!ENTITY a184c270bc11e7c1e3e3641ca277a1d64 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_ellipse.xml">
 <!ENTITY a3306d1f86a6695a685d348eb62a1702f SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_equalizehist_image.xml">
 <!ENTITY aaab91b21b48f88219d8308cd588ba5a3 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_equalizehist_path.xml">
 <!ENTITY a70195159e9dff40acd6b8120f286d852 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_filter2D.xml">
@@ -74,6 +75,7 @@
 &ac0ac4e5ca9ebf98f12e1cb795a947223;
 &a282cedfce079f4ebbeb6fd2afa7eeb6b;
 &a32f5c83f6272b3362c3b3678c1b3c30c;
+&a184c270bc11e7c1e3e3641ca277a1d64;
 &a3306d1f86a6695a685d348eb62a1702f;
 &aaab91b21b48f88219d8308cd588ba5a3;
 &a70195159e9dff40acd6b8120f286d852;

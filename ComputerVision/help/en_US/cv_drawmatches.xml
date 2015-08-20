@@ -2,12 +2,12 @@
 <refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_drawmatches" xml:lang="en">
 <refnamediv>
 <refname>cv_drawmatches</refname>
- <refpurpose>To draw good matches with respect to keypoints</refpurpose>
+ <refpurpose>To draw matches with respect to keypoints</refpurpose>
  </refnamediv>
 
 <refsynopsisdiv>
  <title>Calling Sequence</title> 
-<synopsis>image_ret=cv_drawmatches(image1,kp1,image2,kp2,matches)
+<synopsis>img_ret=cv_drawmatches(image1,kp1,image2,kp2)
 </synopsis>
  </refsynopsisdiv>
 <refsection> 
@@ -15,6 +15,7 @@
 <variablelist>
 <varlistentry>
 <term>image1</term>
+image1</term>
 <listitem>
 <para>First image: Must be np.ndarray</para>
 </listitem>

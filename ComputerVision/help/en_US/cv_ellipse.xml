@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_ellipse" xml:lang="en">
+<refnamediv>
+<refname>cv_ellipse</refname>
+ <refpurpose>To draw Ellipse</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>image_ret=cv_ellipse(image,center,axes,angle,startAngle,endAngle,color,thickness,linetype)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image -> Must be a np.ndarray</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>center</term>
+<listitem>
+<para>Center of the ellipse. -> Must be a constant ex: [5,5]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>axes</term>
+<listitem>
+<para>Length of axes -> [major axis length, minor axis length] ex:[100,50]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>angle</term>
+<listitem>
+<para> angle is the angle of rotation of ellipse in anti-clockwise direction</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>startAngle</term>
+<listitem>
+<para> startAngle denotes the starting  of ellipse arc measured in clockwise direction from major axis. i.e. giving values 0 and 360 gives the full ellipse</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>endAngle</term>
+<listitem>
+<para> endAngle denotes the  ending of ellipse arc measured in clockwise direction from major axis. i.e. giving values 0 and 360 gives the full ellipse</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>color</term>
+<listitem>
+<para>Color of ellipse-> Must be a constant ex : [255,0,0]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>thickness</term>
+<listitem>
+<para>Thickness of Ellipse outline</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>linetype</term>
+<listitem>
+<para>Type of line-> 1 for antialiased type of line , 4 for 4-connected line, 8 for 8 connected line </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>image_ret</term>
+<listitem>
+<para>Returned Image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>To draw Ellipse</para>
+<para>This function is used to draw ellipse in an image</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+image=cv_ellipse(input_image,[256,256],[100,50],0,0,180,[255,0,0],-1,4)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_circle">cv_circle</link>
+<link linkend="cv_line">cv_line</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>
