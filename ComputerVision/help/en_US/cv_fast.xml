@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_fast" xml:lang="en">
+<refnamediv>
+<refname>cv_fast</refname>
+ <refpurpose>Feature Detector</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>keypoints=cv_fast(image,threshold,nonmaxSuppression)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image whoes features are to be extracted</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>threshold</term>
+<listitem>
+<para>It is the threshold value ->must be constant</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>nonmaxSuppression</term>
+<listitem>
+<para>Constant must be pass, It decides whether non-maximum suppression to be applied or not</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>keypoints</term>
+<listitem>
+<para>These are the keypoints optained from Feature extraction</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Feature Detector</para>
+<para>Using cv_fast function one can extract features which are returned in the form of Keypoints</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+keypoints=cv_fast(input_image,10,1)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_brief">cv_brief</link>
+<link linkend="cv_drawmatches">cv_drawmatches</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

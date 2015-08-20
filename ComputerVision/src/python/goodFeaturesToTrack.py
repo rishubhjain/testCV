@@ -14,7 +14,7 @@ def goodFeaturesToTrack(image, maxCorners, qualityLevel, minDistance):
     
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     
-    corners = cv2.goodFeaturesToTrack(gray, 25, 0.01, 10)
+    corners = cv2.goodFeaturesToTrack(gray, maxCorners, qualityLevel, minDistance)
     corners = np.int0(corners)
     for i in corners:
         x,y = i.ravel()
