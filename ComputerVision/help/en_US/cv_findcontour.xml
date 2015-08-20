@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_findcontour" xml:lang="en">
+<refnamediv>
+<refname>cv_findcontour</refname>
+ <refpurpose>Finding Contour</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>contours,hierarchy=cv_findcontour(image,mode,method)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input image -> must be np.ndarray</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>mode</term>
+<listitem>
+<para>Contour retrieval mode 1->cv2.RETR_EXTERNAL  2-> cv2.RETR_LIST    3->cv2.RETR_CCOMP    4->cv2.RETR_TREE</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>method</term>
+<listitem>
+<para>Contour approximation method    1->cv2.CHAIN_APPROX_NONE    2->cv2.CHAIN_APPROX_SIMPLE    3->cv2.CHAIN_APPROX_TC89_L1</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>contours</term>
+<listitem>
+<para>Returns Contours</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>hierarchy</term>
+<listitem>
+<para>Returns Hierarchy ->vector, containing information about the image topology</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Finding Contour</para>
+<para>This function is used to find the contours </para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[contours,hierarchy]=cv_findcontour(image,1,1)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_fast">cv_fast</link>
+<link linkend="cv_drawmatches">cv_drawmatches</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

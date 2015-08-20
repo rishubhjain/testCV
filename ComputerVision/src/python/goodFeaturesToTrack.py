@@ -6,7 +6,6 @@ import numpy as np
 
 def goodFeaturesToTrack(image, maxCorners, qualityLevel, minDistance):
     
-    img = cv2.imread(image)
 
     maxCorners1 = int(maxCorners)
     qualityLevel1 = float(qualityLevel)
@@ -16,10 +15,5 @@ def goodFeaturesToTrack(image, maxCorners, qualityLevel, minDistance):
     
     corners = cv2.goodFeaturesToTrack(gray, maxCorners, qualityLevel, minDistance)
     corners = np.int0(corners)
-    for i in corners:
-        x,y = i.ravel()
-        cv2.circle(img,(x,y),3,255,-1)
-
-    '''cv2.imshow('corners',img)
-    cv2.waitKey(0)'''
-    return img
+    
+    return corners
