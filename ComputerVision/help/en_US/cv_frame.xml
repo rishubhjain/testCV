@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_frame" xml:lang="en">
+<refnamediv>
+<refname>cv_frame</refname>
+ <refpurpose>TO get frame</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>ret,frame=cv_frame(video_path)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>video_path</term>
+<listitem>
+<para>Path of the video , Must be String</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>ret</term>
+<listitem>
+<para>True-> frame captured  False-> Frame not captured </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>frame</term>
+<listitem>
+<para>Frame returned</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Capture Frame</para>
+<para>This function can be used to capture frame from a video by passing path of video</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[ret,frame]=cv_frame(N:\video1.flv)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_meanshift">cv_meanshift</link>
+<link linkend="cv_camshift">cv_camshift</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>
