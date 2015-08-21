@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_pyrdown" xml:lang="en">
+<refnamediv>
+<refname>cv_pyrdown</refname>
+ <refpurpose>"Blurs an image and downsamples it"</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>"image"=cv_pyrdown("image","iteration")
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>"image"</term>
+<listitem>
+<para>"Input image"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"iteration"</term>
+<listitem>
+<para>"Number of times to iterate downSamples"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"image"</term>
+<listitem>
+<para>"output image; it has the same type as input image"</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>"Blurs an image and downsamples it"</para>
+<para>"The function performs the downsampling step of the Gaussian pyramid construction. First, it convolves the source image with the kernel. Then, it downsamples the image by rejecting even rows and columns"</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+"[image]=cv_pyrdown(input_image,5);"</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_pyrup">cv_pyrup</link>
+<link linkend="cv_rotate">cv_rotate</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_rectangle" xml:lang="en">
+<refnamediv>
+<refname>cv_rectangle</refname>
+ <refpurpose>"Draws a simple, thick, or filled up-right rectangle."</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>"image_ret"=cv_rectangle("image","start","end","colour","linetype","thickness")
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>"image"</term>
+<listitem>
+<para>"Input Image"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"start"</term>
+<listitem>
+<para>"Vertex of the rectangle"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"end"</term>
+<listitem>
+<para>"Vertex of the rectangle opposite to start"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"colour"</term>
+<listitem>
+<para>" Rectangle color or brightness (grayscale image)"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"linetype"</term>
+<listitem>
+<para>"Type of the line: 8 (or omitted) - 8-connected line, 4 - 4-connected line and CV_AA - antialiased line."</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"thickness"</term>
+<listitem>
+<para>"Line thickness"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"image_ret"</term>
+<listitem>
+<para>"Returned Image"</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>"The function rectangle draws a rectangle outline or a filled rectangle whose two opposite corners are start and end"</para>
+<para>"The function rectangle draws a rectangle outline or a filled rectangle whose two opposite corners are start and end"</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+"[image_ret] = cv_rectangle(input_image,(115,120),(170,150),(255,0,0),8,2) "</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_close">cv_close</link>
+<link linkend="cv_circle">cv_circle</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

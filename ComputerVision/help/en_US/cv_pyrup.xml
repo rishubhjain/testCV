@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_pyrup" xml:lang="en">
+<refnamediv>
+<refname>cv_pyrup</refname>
+ <refpurpose>"Upsamples an image and then blurs it."</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>"image"=cv_pyrup("image","iteration")
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>"image"</term>
+<listitem>
+<para>"Input image"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"iteration"</term>
+<listitem>
+<para>"Number of times to iterate the input image"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>"image"</term>
+<listitem>
+<para>"output image. It has the same type as input image ."</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>"Upsamples an image and then blurs it."</para>
+<para>"The function performs the upsampling step of the Gaussian pyramid construction, though it can actually be used to construct the Laplacian pyramid. First, it upsamples the source image by injecting even zero rows and columns and then convolves the result with the same kernel as in cv_pyrDown() multiplied by 4"</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+"[image]=cv_pyrup(input_image,2);"</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_test">cv_test</link>
+<link linkend="cv_rotate">cv_rotate</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>
