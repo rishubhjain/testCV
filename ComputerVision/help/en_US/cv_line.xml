@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_line" xml:lang="en">
+<refnamediv>
+<refname>cv_line</refname>
+ <refpurpose>Draws line between specified points</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>image_ret=cv_line(image,start,end,colour,linetype,thickness)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input Image on which Line Is to be drawn</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>start</term>
+<listitem>
+<para>Start point example -> [20,30]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>end</term>
+<listitem>
+<para>Ending point example -> [40,50]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>colour</term>
+<listitem>
+<para>colour of line example -> [0,255,0]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>linetype</term>
+<listitem>
+<para>Linetype values : 8 For 8 connected line , 4 For 4 connected line And anything Else For antialiased line</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>thickness</term>
+<listitem>
+<para>Thickness of line</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>image_ret</term>
+<listitem>
+<para>Output image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Provides Line drawing facility on image</para>
+<para>Draws line on image between specified cordinates (start And end)</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[image_ret] = cv_line(input_image,[20,30],[40,40],[0,255,0],1,2) </programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_resize">cv_resize</link>
+<link linkend="cv_rotate">cv_rotate</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

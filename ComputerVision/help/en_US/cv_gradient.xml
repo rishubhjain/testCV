@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_gradient" xml:lang="en">
+<refnamediv>
+<refname>cv_gradient</refname>
+ <refpurpose>Performs advanced morphological Gradient transformations</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_gradient(image,kernel_type,kernel_size)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_type</term>
+<listitem>
+<para>It accepts Integer/Float As Input  1->MORPH_RECT 2-> MORPH_ELLIPSE 3-> MORPH_CROSS</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_size</term>
+<listitem>
+<para>It accepts a List As Input specifying the size of Kernel needed example [5,5]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Output image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Performs advanced morphological Gradient transformations</para>
+<para>he function can perform advanced morphological Gradient transformations using an erosion And dilation As basic operations</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[img_ret]=cv_gradient(input_image,1,[4,4])</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_sobel">cv_sobel</link>
+<link linkend="cv_sift">cv_sift</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>
