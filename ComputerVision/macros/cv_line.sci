@@ -12,6 +12,11 @@ function [image_ret] = cv_line(image,start,end,colour,linetype,thickness)
 
 	end
 	
+	if checkimage(image)==0 then
+		error(msprintf(gettext("%s: Wrong type for argument %d: Image expected.\n"), "cv_line", 1));
+		
+	end
+	
 	checkconstant(start,"cv_line",2);
 	
 	checkconstant(end,"cv_line",3);
