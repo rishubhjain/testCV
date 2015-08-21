@@ -46,7 +46,7 @@
 <refsection>
 <title>Examples</title>
 <programlisting role="example">
-"[mat]=cv_zeros(8,8,1)"</programlisting>
+"[mat]=cv_zeros(8,8,1);"</programlisting>
 </refsection>
 <refsection role="see also">
 <title>See Also</title>

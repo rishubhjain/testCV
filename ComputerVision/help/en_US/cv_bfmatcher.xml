@@ -36,7 +36,7 @@
 <refsection> 
 <title>Description</title>
 <para>Match Descriptors</para>
-<para>bf_matcher is used to match descriptors from 2 differnt images, It return DMatch object which has properties like distance to know good matches and bad matches</para></refsection>
+<para>bf_matcher is used to match descriptors from 2 different images, It return DMatch object which has properties like distance to know good matches and bad matches</para></refsection>
 <refsection>
 <title>Examples</title>
 <programlisting role="example">

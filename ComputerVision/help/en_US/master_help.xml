@@ -14,7 +14,6 @@
 <!ENTITY adace61de963c1986d4ec6850196aeaed SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_close.xml">
 <!ENTITY aef793ee3d0e7b96160ccf526069ec0e5 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_cornerharris.xml">
 <!ENTITY ac0ac4e5ca9ebf98f12e1cb795a947223 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_displaykeypoint.xml">
-<!ENTITY a282cedfce079f4ebbeb6fd2afa7eeb6b SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_drawkwypoints.xml">
 <!ENTITY a32f5c83f6272b3362c3b3678c1b3c30c SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_drawmatches.xml">
 <!ENTITY a184c270bc11e7c1e3e3641ca277a1d64 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_ellipse.xml">
 <!ENTITY a3306d1f86a6695a685d348eb62a1702f SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_equalizehist_image.xml">
@@ -22,11 +21,14 @@
 <!ENTITY a1cfd3367859145a48de8e0ed59ef20b7 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_fast.xml">
 <!ENTITY a70195159e9dff40acd6b8120f286d852 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_filter2D.xml">
 <!ENTITY aaa30bdf3b383f6a3bef578c52f739f82 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_findcontour.xml">
+<!ENTITY a520d09304bbfa3016ce31252a6b79d63 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_flannmatch.xml">
 <!ENTITY a77cc03360de95fb6232e891fbc21bfaf SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_frame.xml">
 <!ENTITY a25f9e17a7c61388579f9ca585abf7cc9 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_gaussianfilter.xml">
 <!ENTITY ab0a73d645ea9e3e7a659cb2a0acfd8ac SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imread_path.xml">
 <!ENTITY a216bd356f7c84fd8111f7c78883cc4f7 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_image.xml">
 <!ENTITY a24eb4e8c56cf64578e02ffc51bf4abc9 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_path.xml">
+<!ENTITY a112778649a48cca6a7faf395cd533af2 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_ones.xml">
+<!ENTITY a2bc78070168e8081fe9c16a80c756b25 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_orb.xml">
 <!ENTITY a946aeba4e7971d658d0af1f0cfc7cf59 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_prespective_transform.xml">
 <!ENTITY a55c859af0e4c9478f23922df3c03a100 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_pyrdown.xml">
 <!ENTITY a1e111a2c1a8374d4391accc5b0e1be24 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_pyrup.xml">
@@ -80,7 +82,6 @@
 &adace61de963c1986d4ec6850196aeaed;
 &aef793ee3d0e7b96160ccf526069ec0e5;
 &ac0ac4e5ca9ebf98f12e1cb795a947223;
-&a282cedfce079f4ebbeb6fd2afa7eeb6b;
 &a32f5c83f6272b3362c3b3678c1b3c30c;
 &a184c270bc11e7c1e3e3641ca277a1d64;
 &a3306d1f86a6695a685d348eb62a1702f;
@@ -88,11 +89,14 @@
 &a1cfd3367859145a48de8e0ed59ef20b7;
 &a70195159e9dff40acd6b8120f286d852;
 &aaa30bdf3b383f6a3bef578c52f739f82;
+&a520d09304bbfa3016ce31252a6b79d63;
 &a77cc03360de95fb6232e891fbc21bfaf;
 &a25f9e17a7c61388579f9ca585abf7cc9;
 &ab0a73d645ea9e3e7a659cb2a0acfd8ac;
 &a216bd356f7c84fd8111f7c78883cc4f7;
 &a24eb4e8c56cf64578e02ffc51bf4abc9;
+&a112778649a48cca6a7faf395cd533af2;
+&a2bc78070168e8081fe9c16a80c756b25;
 &a946aeba4e7971d658d0af1f0cfc7cf59;
 &a55c859af0e4c9478f23922df3c03a100;
 &a1e111a2c1a8374d4391accc5b0e1be24;

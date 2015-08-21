@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_ones" xml:lang="en">
+<refnamediv>
+<refname>cv_ones</refname>
+ <refpurpose>"Returns matrix of Ones"</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>mat=cv_ones(rows,cols,type1)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>rows</term>
+<listitem>
+<para>Number of rows</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>cols</term>
+<listitem>
+<para>Number of columns</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>type1</term>
+<listitem>
+<para>If value Is 1 then Type of matrix Is float64 Else If its 2 then Type Is uint8 </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>mat</term>
+<listitem>
+<para>Returned Matrix of ones</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Returns matrix of ones</para>
+<para>Returns array of dimention Rows x Column specified In the argument whos All values are zero</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[mat]=cv_ones(8,8,1);</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_zeros">cv_zeros</link>
+<link linkend="cv_surf">cv_surf</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

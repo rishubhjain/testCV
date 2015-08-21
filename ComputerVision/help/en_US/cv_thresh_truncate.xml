@@ -53,7 +53,7 @@
 <simplelist type="inline">
 <member>
 <link linkend="cv_thresh_binary">cv_thresh_binary</link>
-<link linkend=""cv_thresh_tozero"">cv_thresh_tozero</link>
+<link linkend="cv_thresh_tozero">cv_thresh_tozero</link>
 </member>
 </simplelist>
 </refsection>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_flannmatch" xml:lang="en">
+<refnamediv>
+<refname>cv_flannmatch</refname>
+ <refpurpose>Matching Descriptors using Fast Approximate Nearest Neighbor</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>matches=cv_flannmatch(des1,des2,num_trees,numchecks,k)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>des1</term>
+<listitem>
+<para>Decriptors Obtained from one image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>des2</term>
+<listitem>
+<para>Descriptors Obtained from second Image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>num_trees</term>
+<listitem>
+<para>Number of trees that must be used-> must be constant</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>numchecks</term>
+<listitem>
+<para>Number of checks to be performed -> MUst be a constant</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>k</term>
+<listitem>
+<para>must be a constant</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>matches</term>
+<listitem>
+<para>The function returns the number of matched features</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Mathing Descriptors</para>
+<para>This function Matches descriptors of two images using Fast Approximate Nearest Neighbor Algorithm</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+matches=cv_fkannmatch(des1,des2,5,5,2)</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_drawmatches">cv_drawmatches</link>
+<link linkend="cv_brief">cv_brief</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

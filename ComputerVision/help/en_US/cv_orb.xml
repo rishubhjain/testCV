@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_orb" xml:lang="en">
+<refnamediv>
+<refname>cv_orb</refname>
+ <refpurpose>Provides ORB: An efficient alternative to SIFT/SURF</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>kp,des=cv_orb(image,nfeatures,scaleFactor,color,displayimage)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>nfeatures</term>
+<listitem>
+<para>The maximum number of features to retain</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>scaleFactor</term>
+<listitem>
+<para>Pyramid decimation ratio, greater than 1. scaleFactor==2 means the classical pyramid, where each Next level has 4x less pixels than the previous, but such a big scale factor will degrade feature matching scores dramatically. On the other hand, too close to 1 scale factor will mean that to cover certain scale Range you will need more pyramid levels And so the speed will suffer.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>color</term>
+<listitem>
+<para>color of keypoints drawn on Input image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>displayimage</term>
+<listitem>
+<para>If 1 it will show the keypoints drawn on Input Image Else it doesn Not</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kp</term>
+<listitem>
+<para>Keypoints of Descriptor </para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>des</term>
+<listitem>
+<para>Descriptors of Input image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>ORB: An efficient alternative to SIFT / SURF</para>
+<para>ORB Is basically a fusion of FAST keypoint detector And BRIEF descriptor With many modifications to enhance the performance. First it use FAST to find keypoints, then apply Harris corner measure to find top N points among them. Now For descriptors, ORB use BRIEF descriptors.</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[kp,des] = cv_orb(input_image,100,2,(0,255,0),1);</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_surf">cv_surf</link>
+<link linkend="cv_sift">cv_sift</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

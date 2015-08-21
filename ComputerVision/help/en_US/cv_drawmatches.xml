@@ -15,7 +15,7 @@
 <variablelist>
 <varlistentry>
 <term>image1</term>
-image1</term>
+
 <listitem>
 <para>First image: Must be np.ndarray</para>
 </listitem>
