@@ -27,6 +27,9 @@
 <!ENTITY ab0a73d645ea9e3e7a659cb2a0acfd8ac SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imread_path.xml">
 <!ENTITY a216bd356f7c84fd8111f7c78883cc4f7 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_image.xml">
 <!ENTITY a24eb4e8c56cf64578e02ffc51bf4abc9 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_imshow_path.xml">
+<!ENTITY ac802b6a3729fe501bf9b09231a12db14 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_match2image.xml">
+<!ENTITY adbbc2ff666ca763b39c59b8e824c5f5c SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_match_template.xml">
+<!ENTITY a383d392d5f8b1b4e922f4632fb339ef2 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_medianblur.xml">
 <!ENTITY a112778649a48cca6a7faf395cd533af2 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_ones.xml">
 <!ENTITY a2bc78070168e8081fe9c16a80c756b25 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_orb.xml">
 <!ENTITY a946aeba4e7971d658d0af1f0cfc7cf59 SYSTEM "file:///N:/CV/ComputerVision/help/en_US/cv_prespective_transform.xml">
@@ -95,6 +98,9 @@
 &ab0a73d645ea9e3e7a659cb2a0acfd8ac;
 &a216bd356f7c84fd8111f7c78883cc4f7;
 &a24eb4e8c56cf64578e02ffc51bf4abc9;
+&ac802b6a3729fe501bf9b09231a12db14;
+&adbbc2ff666ca763b39c59b8e824c5f5c;
+&a383d392d5f8b1b4e922f4632fb339ef2;
 &a112778649a48cca6a7faf395cd533af2;
 &a2bc78070168e8081fe9c16a80c756b25;
 &a946aeba4e7971d658d0af1f0cfc7cf59;

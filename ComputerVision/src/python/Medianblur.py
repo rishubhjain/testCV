@@ -7,7 +7,7 @@ import numpy as np
 import Kernel
 
 
-def medianblur(image, kSize):
+def medianblur(image, kernel_type,kernel_size):
 
     if image is None:
         print 'Error in input Image'

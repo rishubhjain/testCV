@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_match_template" xml:lang="en">
+<refnamediv>
+<refname>cv_match_template</refname>
+ <refpurpose>Provides Template matching facility</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>image=cv_match_template(image,template,mode)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>template</term>
+<listitem>
+<para>Template to match With Input image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>mode</term>
+<listitem>
+<para>"If mode==1:method=cv2.TM_CCOEFF elif mode==2:  method=cv2.TM_CCOEFF_NORMED elif mode==3:  method=cv2.TM_CCORR elif mode==  method=cv2.TM_CCORR_NORMED elif mode==5:  method=cv2.TM_SQDIFF elif mode==6:    method=cv2.TM_SQDIFF_NORMED"</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Output Image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Template matching</para>
+<para>"It matches the template with input image and gives output"</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[image]=cv_match_template(input_image,template,2);</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_surf">cv_surf</link>
+<link linkend="cv_sift">cv_sift</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

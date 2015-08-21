@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_match2image" xml:lang="en">
+<refnamediv>
+<refname>cv_match2image</refname>
+ <refpurpose>"compare two Images using ORB"</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>image_ret=cv_match2image(image1,image2,nfeatures,scaleFactor,color)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image1</term>
+<listitem>
+<para>Input Image 1</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>image2</term>
+<listitem>
+<para>Input Image 2</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>nfeatures</term>
+<listitem>
+<para>Number of features to compare</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>scaleFactor</term>
+<listitem>
+<para>Pyramid decimation ratio, greater than 1. scaleFactor==2 means the classical pyramid, where each Next level has 4x less pixels than the previous, but such a big scale factor will degrade feature matching scores dramatically. On the other hand, too close to 1 scale factor will mean that to cover certain scale Range you will need more pyramid levels And so the speed will suffer</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>color</term>
+<listitem>
+<para>color of keypoints drawn on 2 Input image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>image_ret</term>
+<listitem>
+<para>Result of comparison</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Easy Caompare of two images</para>
+<para>This function uses ORB to extract features from two images and then uses BFmatcher to compare these features</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[image_ret]=cv_match2image(input_image,input_image,300,2,[0,255,0]);</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_orb">cv_orb</link>
+<link linkend="cv_sift">cv_sift</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>

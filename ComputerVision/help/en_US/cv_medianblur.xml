@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:scilab="http://www.scilab.org" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns3="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" version="5.0-subset Scilab" xml:id="cv_medianblur" xml:lang="en">
+<refnamediv>
+<refname>cv_medianblur</refname>
+ <refpurpose>Blurs an image using the median Filter</refpurpose>
+ </refnamediv>
+
+<refsynopsisdiv>
+ <title>Calling Sequence</title> 
+<synopsis>img_ret=cv_medianblur(image,kernel_type,kernel_size)
+</synopsis>
+ </refsynopsisdiv>
+<refsection> 
+<title>Arguments</title>
+<variablelist>
+<varlistentry>
+<term>image</term>
+<listitem>
+<para>Input image</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_type</term>
+<listitem>
+<para>It accepts Integer/Float As Input  1->MORPH_RECT 2-> MORPH_ELLIPSE 3-> MORPH_CROSS</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>kernel_size</term>
+<listitem>
+<para>It accepts a list as input specifying the size of Kernel needed example [5,5]</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>img_ret</term>
+<listitem>
+<para>Blurred Image</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</refsection>
+<refsection> 
+<title>Description</title>
+<para>Median Blur</para>
+<para>The function smoothes an image using the median Filter With the ksize x ksize aperture. Each channel of a multi-channel image Is processed independently</para></refsection>
+<refsection>
+<title>Examples</title>
+<programlisting role="example">
+[img_ret]=cv_medianblur(input_image,1,[5,5]);</programlisting>
+</refsection>
+<refsection role="see also">
+<title>See Also</title>
+<simplelist type="inline">
+<member>
+<link linkend="cv_gaussianfilter">cv_gaussianfilter</link>
+<link linkend="cv_meanshift">cv_meanshift</link>
+</member>
+</simplelist>
+</refsection>
+</refentry>
