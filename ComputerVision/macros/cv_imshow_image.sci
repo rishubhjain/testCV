@@ -3,10 +3,10 @@ function[]=cv_imshow_image(image)
 	
 	
 	if (lhs<>1) then
-		error("this function returns an image");
+		error(msprintf(gettext("%s: Wrong number of output arguments: %d  expected.\n"), "cv_imshow_image", 1 ));
 	end
-	if(rhs<>1) then
-		error("invalid number of arguments");
+	if checkimage(image)==0 then
+		error(msprintf(gettext("%s: Wrong type for argument %d: Image expected.\n"), "cv_imshow_image", 1));
 	end
 	image=converttonumpy(image);
 	
