@@ -1,5 +1,5 @@
 
-function[corners]=cv_shi_cornerdetection(image, maxCorners, qualityLevel, minDistance)
+function[image,corners]=cv_shi_cornerdetection(image, maxCorners, qualityLevel, minDistance)
 	image=converttonumpy(image)
 	[lhs,rhs]=argn(0)	
 	if (cv_check_channel(image)==3) then
@@ -17,5 +17,7 @@ function[corners]=cv_shi_cornerdetection(image, maxCorners, qualityLevel, minDis
 	image=converttonumpy(image)
 
     pyImport shi_cornerdetection
-    corners=shi_cornerdetection.goodFeaturesToTrack(image, maxCorners, qualityLevel, minDistance)
+    ret=shi_cornerdetection.goodFeaturesToTrack(image, maxCorners, qualityLevel, minDistance)
+	image=ret(0)
+	corners=ret(1)
 endfunction
